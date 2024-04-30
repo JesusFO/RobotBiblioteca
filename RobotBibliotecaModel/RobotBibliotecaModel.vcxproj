@@ -111,6 +111,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ConstanciaDePrestamo.h" />
+    <ClInclude Include="IngresoDatos.h" />
+    <ClInclude Include="Notificacion.h" />
+    <ClInclude Include="Registro.h" />
+    <ClInclude Include="Usuario.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
