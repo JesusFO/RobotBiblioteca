@@ -4,7 +4,7 @@
 
 using namespace System;
 
-namespace RobotBooks_G6_Model {
+namespace RobotBibliotecaModel {
 
 	public ref class Notificacion {
 	private:
@@ -19,45 +19,23 @@ namespace RobotBooks_G6_Model {
 		Notificacion();
 		Notificacion(int idNotificacion, String^ asunto, String^ mensaje, String^ FechaNotificacion, String^ HoraNotificacion, Usuario^ objUsuario);
 
-		int Notificacion::getIdNotificacion() {
-			return this->idNotificacion;
-		}
-		void Notificacion::setIdNotificacion(int idNotificacion) {
-			this idNotificacion->idNotificacion;
-		}
+		int getIdNotificacion();
+		void setIdNotificacion(int idNotificacion);
 
-		String^ Notificacion::getAsunto() {
-			return this->asunto;
-		}
-		void Notificacion::setAsunto(String^ asunto) {
-			this asunto->asunto;
-		}
-		String^ Notificacion::getMensaje() {
-			return this->mensaje;
-		}
-		void Notificacion::setMensaje(String^ mensaje) {
-			this mensaje->mensaje;
-		}
+		String^ getAsunto();
+		void setAsunto(String^ asunto);
 
-		String^ Notificacion::getFechaNotificacion() {
-			return this->FechaNotificacion;
-		}
-		void Notificacion::setFechaNotificacion(String^ FechaNotificacion) {
-			this FechaNotificacion->FechaNotificacion;
-		}
-		String^ Notificacion::getHoraNotificacion() {
-			return this->HoraNotificacion;
-		}
-		void Notificacion::setHoraNotificacion(String^ HoraNotificacion) {
-			this HoraNotificacion->HoraNotificacion;
-		}
-		Usuario^ Notificacion::getObjUsuario() {
-			return this->objUsuario;
-		}
-		void Notificacion::setObjUsuario(Usuario^ objUsuario) {
-			this objUsuario->objUsuario;
-		}
+		String^ getMensaje();
+		void setMensaje(String^ mensaje);
 
+		String^ getFechaNotificacion();
+		void setFechaNotificacion(String^ FechaNotificacion);
+
+		String^ getHoraNotificacion();
+		void setHoraNotificacion(String^ HoraNotificacion);
+
+		Usuario^ getObjUsuario();
+		void setObjUsuario(Usuario^ objUsuario);
 
 	};
 

@@ -5,9 +5,9 @@
 
 using namespace System;
 
-namespace RobotBooks_G6_Model {
+namespace RobotBibliotecaModel {
 
-	public ref class Usuario : IngresoDatos {
+	public ref class Registro : IngresoDatos {
 	private:
 		int idRegistro;
 		String^ Direccion;
@@ -17,82 +17,38 @@ namespace RobotBooks_G6_Model {
 		Usuario^ objUsuario;
 
 	public:
-		Usuario();
+		Registro();
 		Registro(int idRegistro, String^ Direccion, String^ DNI, String^ Contraseña, String^ fecha, Usuario^ objUsuario, int idIngreso, int codigo, String^ correo, String^ cuenta, String^ telefono);
 
-		int Usuario::getIdRegistro() {
-			return this->idRegistro;
-		}
-		void Usuario::setIdRegistro(int idRegistro) {
-			this idRegistro->idRegistro;
-		}
+		int getIdRegistro();
+		void setIdRegistro(int idRegistro);
 
-		String^ Usuario::getDireccion() {
-			return this->Direccion;
-		}
-		void Usuario::setDireccion(String^ Direccion) {
-			this Direccion->Direccion;
-		}
-		String^ Usuario::getDNI() {
-			return this->DNI;
-		}
-		void Usuario::setDNI(String^ DNI) {
-			this DNI->DNI;
-		}
+		String^ getDireccion();
+		void setDireccion(String^ Direccion);
+		String^ getDNI();
+		void setDNI(String^ DNI);
 
-		String^ Usuario::getContraseña() {
-			return this->Contraseña;
-		}
-		void Usuario::setContraseña(String^ Contraseña) {
-			this Contraseña->Contraseña;
-		}
-		String^ Usuario::getFecha() {
-			return this->fecha;
-		}
-		void Usuario::setFecha(String^ HoraNotificacion) {
-			this fecha->fecha;
-		}
-		Usuario^ Usuario::getObjUsuario() {
-			return this->objUsuario;
-		}
-		void Usuario::setObjUsuario(Usuario^ objUsuario) {
-			this objUsuario->objUsuario;
-		}
+		String^ getContraseña();
+		void setContraseña(String^ Contraseña);
+		String^ getFecha();
+		void setFecha(String^ HoraNotificacion);
+		Usuario^ getObjUsuario();
+		void setObjUsuario(Usuario^ objUsuario);
 
 
-		int Usuario::getIdIngreso() {
-			return this->idIngreso;
-		}
-		void Usuario::setIdIngreso(int idIngreso) {
-			this idIngreso->idIngreso;
-		}
+		int getIdIngreso();
+		void setIdIngreso(int idIngreso);
 
-		int Usuario::getCodigo() {
-			return this->codigo;
-		}
-		void Usuario::setCodigo(int codigo) {
-			this codigo->codigo;
-		}
+		int getCodigo();
+		void setCodigo(int codigo);
 
-		String^ Usuario::getCorreo() {
-			return this->correo;
-		}
-		void Usuario::setCorreo(String^ correo) {
-			this correo->correo;
-		}
-		String^ Usuario::getDNI() {
-			return this->cuenta;
-		}
-		void Usuario::setCuenta(String^ cuenta) {
-			this cuenta->cuenta;
-		}
+		String^ getCorreo();
+		void setCorreo(String^ correo);
+		String^ getDNI();
+		void setCuenta(String^ cuenta);
 
-		String^ Usuario::getTelefono() {
-			return this->telefono;
-		}
-		void Usuario::setTelefono(String^ telefono) {
-			this telefono->telefono;
-		}
+		String^ getTelefono();
+		void setTelefono(String^ telefono);
 
 	};
 
