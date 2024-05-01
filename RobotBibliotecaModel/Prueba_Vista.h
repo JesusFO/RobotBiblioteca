@@ -1,4 +1,4 @@
-#pragma once
+#pragma once //d
 //
 //Esta es una prueba de visualizacion
 <<<<<<< HEAD
