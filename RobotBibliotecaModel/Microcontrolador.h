@@ -3,7 +3,9 @@
 using namespace System;
 
 namespace RobotBooks_G6_Model {
+
 	public ref class Microcontrolador {
+
 	private:
 		int idMicrocontrolador;
 		int NumeroDeSerie;

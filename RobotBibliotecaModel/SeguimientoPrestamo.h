@@ -2,8 +2,11 @@
 #include "Usuario.h"
 
 using namespace System;
+
 namespace RobotBooks_G6_Model {
+
 	public ref class SeguimientoPrestamo {
+
 		private:
 			int idSeguimentoPrestamo;
 			int VencimientoPrestamoHoras;

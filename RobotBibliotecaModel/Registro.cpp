@@ -7,6 +7,7 @@ Registro::Registro() {
 }
 
 Registro::Registro(int idRegistro, String^ Direccion, String^ DNI, String^ Contraseña, String^ fecha, Usuario^ objUsuario, int idIngreso, int codigo, String^ correo, String^ cuenta, String^ telefono) {
+	
 	this->idRegistro = idRegistro;
 	this->Direccion = Direccion;
 	this->DNI = DNI;
@@ -20,7 +21,7 @@ Registro::Registro(int idRegistro, String^ Direccion, String^ DNI, String^ Contr
 	this->telefono = telefono;
 }
 
-int Usuario::getIdRegistro() {
+int Usuario ::getIdRegistro() {
 	return this->idRegistro;
 }
 void Usuario::setIdRegistro(int idRegistro) {
@@ -58,7 +59,6 @@ Usuario^ Usuario::getObjUsuario() {
 void Usuario::setObjUsuario(Usuario^ objUsuario) {
 	this objUsuario->objUsuario;
 }
-
 
 int Usuario::getIdIngreso() {
 	return this->idIngreso;
