@@ -5,6 +5,7 @@ using namespace System;
 namespace RobotBibliotecaModel {
 
 	public ref class IngresoDatos {
+
 	private:
 		int idIngreso;
 		int codigo;

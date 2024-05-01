@@ -8,6 +8,7 @@ using namespace System;
 namespace RobotBibliotecaModel {
 
 	public ref class Registro : IngresoDatos {
+
 	private:
 		int idRegistro;
 		String^ Direccion;
@@ -22,31 +23,24 @@ namespace RobotBibliotecaModel {
 
 		int getIdRegistro();
 		void setIdRegistro(int idRegistro);
-
 		String^ getDireccion();
 		void setDireccion(String^ Direccion);
 		String^ getDNI();
 		void setDNI(String^ DNI);
-
 		String^ getContraseña();
 		void setContraseña(String^ Contraseña);
 		String^ getFecha();
 		void setFecha(String^ HoraNotificacion);
 		Usuario^ getObjUsuario();
 		void setObjUsuario(Usuario^ objUsuario);
-
-
 		int getIdIngreso();
 		void setIdIngreso(int idIngreso);
-
 		int getCodigo();
 		void setCodigo(int codigo);
-
 		String^ getCorreo();
 		void setCorreo(String^ correo);
 		String^ getDNI();
 		void setCuenta(String^ cuenta);
-
 		String^ getTelefono();
 		void setTelefono(String^ telefono);
 

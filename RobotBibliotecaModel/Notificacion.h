@@ -7,6 +7,7 @@ using namespace System;
 namespace RobotBibliotecaModel {
 
 	public ref class Notificacion {
+
 	private:
 		int idNotificacion;
 		String^ asunto;

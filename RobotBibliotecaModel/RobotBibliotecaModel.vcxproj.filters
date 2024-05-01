@@ -63,6 +63,7 @@
     <ClInclude Include="ValoracionEntrega.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConstanciaDePrestamo.cpp">
@@ -93,6 +94,18 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="ValidacionSolicitud.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Biblioteca.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Bibliotecario.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Libro.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Repositorio.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
