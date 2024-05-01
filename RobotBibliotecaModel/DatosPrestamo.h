@@ -1,7 +1,11 @@
 #pragma once
 // cambiomcambio
 
-//Recepción del codigo
+// CAMBIO CAMBIO
+// CAMBIO 3
+=======
+
+//RecepciÃ³n del codigo
 //Nueva confirmacion
 using namespace System;
 
