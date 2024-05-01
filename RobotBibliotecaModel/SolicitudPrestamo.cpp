@@ -9,7 +9,3 @@
  * SolicitudPrestamo implementation
  */
 
-
-void SolicitudPrestamo::SolicitudPrestamo() {
-
-}
