@@ -113,14 +113,20 @@
   <ItemGroup>
     <ClInclude Include="ConstanciaDePrestamo.h" />
     <ClInclude Include="DatosPrestamo.h" />
+    <ClInclude Include="DetalleEntrega.h" />
     <ClInclude Include="Devolucion.h" />
     <ClInclude Include="IngresoDatos.h" />
+    <ClInclude Include="Mantenimiento.h" />
+    <ClInclude Include="Microcontrolador.h" />
     <ClInclude Include="Multa.h" />
     <ClInclude Include="Notificacion.h" />
     <ClInclude Include="Registro.h" />
+    <ClInclude Include="Robot.h" />
+    <ClInclude Include="SeguimientoPrestamo.h" />
     <ClInclude Include="SolicitudPrestamo.h" />
     <ClInclude Include="Usuario.h" />
     <ClInclude Include="ValidacionSolicitud.h" />
+    <ClInclude Include="ValoracionEntrega.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConstanciaDePrestamo.cpp" />
