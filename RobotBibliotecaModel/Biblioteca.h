@@ -8,7 +8,7 @@
 
 using namespace System;
 
-namespace SalesSystemModel {
+namespace RobotBibliotecaModel {
     public ref class Biblioteca {
     private:
         property String^ Direccion;
