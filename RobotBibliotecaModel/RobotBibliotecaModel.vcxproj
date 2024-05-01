@@ -138,16 +138,22 @@
     <ClCompile Include="Bibliotecario.cpp" />
     <ClCompile Include="ConstanciaDePrestamo.cpp" />
     <ClCompile Include="DatosPrestamo.cpp" />
+    <ClCompile Include="DetalleEntrega.cpp" />
     <ClCompile Include="Devolucion.cpp" />
     <ClCompile Include="IngresoDatos.cpp" />
     <ClCompile Include="Libro.cpp" />
+    <ClCompile Include="Mantenimiento.cpp" />
+    <ClCompile Include="Microcontrolador.cpp" />
     <ClCompile Include="Multa.cpp" />
     <ClCompile Include="Notificacion.cpp" />
     <ClCompile Include="Registro.cpp" />
     <ClCompile Include="Repositorio.cpp" />
+    <ClCompile Include="Robot.cpp" />
+    <ClCompile Include="SeguimientoPrestamo.cpp" />
     <ClCompile Include="SolicitudPrestamo.cpp" />
     <ClCompile Include="Usuario.cpp" />
     <ClCompile Include="ValidacionSolicitud.cpp" />
+    <ClCompile Include="ValoracionEntrega.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
