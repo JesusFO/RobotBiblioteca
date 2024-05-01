@@ -11,13 +11,18 @@ using namespace System;
 namespace SalesSystemModel {
     public ref class SolicitudMantenimiento {
     private:
-        property int idSolicitudMantenimiento;
-        property int idObjeto;
-        property String^ problema;
-        property String^ fecha;
+        property int IdSolicitudMantenimiento;
+        property int IdObjeto;
+        property String^ Problema;
+        property String^ Fecha;
     public:
         SolicitudMantenimiento() {};
-        SolicitudMantenimiento(int idSolicitudMantenimiento, int idObjeto, String^ problema, String^ fecha) {};
+        SolicitudMantenimiento(int idSolicitudMantenimiento, int idObjeto, String^ problema, String^ fecha) {
+            IdSolicitudMantenimiento = idSolicitudMantenimiento;
+            IdObjeto = idObjeto;
+            Problema = problema;
+            Fecha = fecha;
+        };
     }
 };
 #endif //_SOLICITUDMANTENIMIENTO_H

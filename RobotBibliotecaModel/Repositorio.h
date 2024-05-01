@@ -1,5 +1,5 @@
 /**
- * Project Robot Biblioteca
+ * Project: Robot Biblioteca
  */
 #pragma once
 
@@ -11,16 +11,22 @@ using namespace System;
 namespace RobotBibliotecaModel {
     public ref class Repositorio {
     private:
-        property int idRepositorio;
+        property int IdRepositorio;
         property String^ Estante;
         property int Piso;
         property String^ Categoria;
         property String^ Autores;
-        property String^ IDRepositorio;
-        property String^ etiqueta;
+        property String^ Etiqueta;
     public:
         Repositorio() {}
-        Repositorio(int idRepositorio, String^ Estante, int Piso, String^ Categoria, String^ Autores, String^ IDRepositorio, String^ etiqueta) {}
+        Repositorio(int idRepositorio, String^ estante, int piso, String^ categoria, String^ autores, String^ etiqueta) {
+            IdRepositorio = idRepositorio;
+            Estante = estante;
+            Piso = piso;
+            Categoria = categoria;
+            Autores = autores;
+            Etiqueta = etiqueta;
+        }
     };
 }
 #endif //_REPOSITORIO_H
