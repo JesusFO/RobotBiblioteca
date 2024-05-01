@@ -1,18 +1,21 @@
 /**
- * Project Untitled
+ * Project: Robot Biblioteca
  */
 
 
 #ifndef _BIBLIOTECARIO_H
 #define _BIBLIOTECARIO_H
 
-class Bibliotecario {
-public: 
-    int idBibliotecario;
-    String Nombre;
-    String Disponibilidad;
-    
-void Bibliotecario();
-};
+using namespace System;
 
+namespace SalesSystemModel {
+    public ref class Bibliotecario {
+    public:
+        property int idBibliotecario;
+        property String^ Nombre;
+        property String^ Disponibilidad;
+
+        Bibliotecario() {};
+    };
+}
 #endif //_BIBLIOTECARIO_H
