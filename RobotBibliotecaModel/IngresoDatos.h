@@ -2,7 +2,7 @@
 
 using namespace System;
 
-namespace RobotBooks_G6_Model {
+namespace RobotBibliotecaModel {
 
 	public ref class IngresoDatos {
 	private:
@@ -16,38 +16,20 @@ namespace RobotBooks_G6_Model {
 		IngresoDatos();
 		IngresoDatos(int idIngreso, int codigo, String^ correo, String^ cuenta, String^ telefono);
 
-		int IngresoDatos::getIdIngreso() {
-			return this->idIngreso;
-		}
-		void IngresoDatos::setIdIngreso(int idIngreso) {
-			this idIngreso->idIngreso;
-		}
+		int getIdIngreso();
+		void setIdIngreso(int idIngreso);
 
-		int IngresoDatos::getCodigo() {
-			return this->codigo;
-		}
-		void IngresoDatos::setCodigo(int codigo) {
-			this codigo->codigo;
-		}
-		String^ IngresoDatos::getCorreo() {
-			return this->correo;
-		}
-		void IngresoDatos::setCorreo(String^ correo) {
-			this correo->correo;
-		}
+		int getCodigo();
+		void setCodigo(int codigo);
 
-		String^ IngresoDatos::getCuenta() {
-			return this->cuenta;
-		}
-		void IngresoDatos::setCuenta(String^ cuenta) {
-			this cuenta->cuenta;
-		}
-		String^ IngresoDatos::getTelefono() {
-			return this->telefono;
-		}
-		void IngresoDatos::setTelefono(String^ telefono) {
-			this telefono->telefono;
-		}
+		String^ getCorreo();
+		void setCorreo(String^ correo);
+
+		String^ getCuenta();
+		void setCuenta(String^ cuenta);
+
+		String^ getTelefono();
+		void setTelefono(String^ telefono);
 	};
 
 }
