@@ -1,21 +1,23 @@
 /**
- * Project Untitled
+ * Project: Robot Biblioteca
  */
 
 
 #ifndef _BIBLIOTECA_H
 #define _BIBLIOTECA_H
 
-class Biblioteca {
-public: 
-    void idBiblioteca;
-    
-void Biblitoteca();
-private: 
-    String direccion;
-    String nombre;
-    String horarioAtencion;
-    String registrosPrestamo;
-};
+using namespace System;
 
+namespace SalesSystemModel {
+    public ref class Biblioteca {
+    private:
+        String^ direccion;
+        String^ nombre;
+        String^ horarioAtencion;
+        String^ registrosPrestamo;
+    public:
+        int idBiblioteca;
+        void Biblitoteca() {}
+    };
+}
 #endif //_BIBLIOTECA_H
