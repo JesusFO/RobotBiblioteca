@@ -8,8 +8,3 @@
 /**
  * Bibliotecario implementation
  */
-
-
-void Bibliotecario::Bibliotecario() {
-
-}

@@ -11,13 +11,21 @@ using namespace System;
 namespace SalesSystemModel {
     public ref class Biblioteca {
     private:
-        property String^ direccion;
-        property String^ nombre;
-        property String^ horarioAtencion;
-        property String^ registrosPrestamo;
+        property String^ Direccion;
+        property String^ Nombre;
+        property String^ HorarioAtencion;
+        property String^ RegistroPrestamo;
+        property int IdBiblioteca;
     public:
-        property int idBiblioteca;
         Biblioteca() {}
+        Biblioteca(String^ direccion, String^ nombre, String^ horarioAtencion, String^ registrosPrestamo, int idBiblioteca) {
+            Direccion = direccion;
+            Nombre = nombre;
+            HorarioAtencion = horarioAtencion;
+            RegistroPrestamo = registrosPrestamo;
+            IdBiblioteca = idBiblioteca;
+        }
     };
 }
 #endif //_BIBLIOTECA_H
+

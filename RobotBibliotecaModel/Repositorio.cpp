@@ -9,7 +9,3 @@
  * Repositorio implementation
  */
 
-
-void Repositorio::Repositorio() {
-
-}

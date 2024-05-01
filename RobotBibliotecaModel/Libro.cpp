@@ -8,8 +8,3 @@
 /**
  * Libro implementation
  */
-
-
-void Libro::Libro() {
-
-}

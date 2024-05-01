@@ -10,12 +10,17 @@ using namespace System;
 
 namespace SalesSystemModel {
     public ref class Bibliotecario {
-    public:
-        property int idBibliotecario;
+    private: 
+        property int IdBibliotecario;
         property String^ Nombre;
         property String^ Disponibilidad;
-
+    public:
         Bibliotecario() {};
+        Bibliotecario(int idBibliotecario, String^ nombre, String^ disponibilidad) {
+            IdBibliotecario = idBibliotecario;
+            Nombre = nombre;
+            Disponibilidad = disponibilidad;
+        };
     };
 }
 #endif //_BIBLIOTECARIO_H
