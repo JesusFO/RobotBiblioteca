@@ -8,5 +8,4 @@
 
 //Yp
 
-//Cambiando de nuevo //D
->>>>>>> d1bfeb74cffa6fd0a9d5344bd5553632167e07f9
+//Cambiando de nuevo
