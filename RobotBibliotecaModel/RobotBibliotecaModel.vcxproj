@@ -117,6 +117,7 @@
     <ClInclude Include="IngresoDatos.h" />
     <ClInclude Include="Multa.h" />
     <ClInclude Include="Notificacion.h" />
+    <ClInclude Include="Prueba_Vista.h" />
     <ClInclude Include="Registro.h" />
     <ClInclude Include="SolicitudPrestamo.h" />
     <ClInclude Include="Usuario.h" />
