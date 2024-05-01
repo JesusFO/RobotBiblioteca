@@ -28,7 +28,7 @@ void IngresoDatos::setCodigo(int codigo) {
 	this codigo = codigo;
 }
 String^ IngresoDatos::getCorreo() {
-	return this-> correo;
+	return this->correo;
 }
 void IngresoDatos::setCorreo(String^ correo) {
 	this correo = correo;
