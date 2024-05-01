@@ -3,7 +3,9 @@
 #include "SolicitudMantenimiento"
 using namespace System::Collections::Generic;
 namespace RobotBooks_G6_Model {
+
 	public ref class Mantenimiento {
+
 		private:
 			int idMantenimiento;
 			String^ NombreDelResponsable;
