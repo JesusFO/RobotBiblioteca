@@ -1,5 +1,7 @@
 #pragma once
 // cambiomcambio
+
+//Recepción del codigo
 using namespace System;
 
 namespace RobotBibliotecaModel {
