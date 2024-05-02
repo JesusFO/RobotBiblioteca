@@ -2,6 +2,7 @@
 
 using namespace RobotBibliotecaControler;
 using namespace System::IO;
+using namespace RobotBibliotecaModel;
 
 LibroControler::LibroControler() {
 
