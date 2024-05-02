@@ -1,5 +1,6 @@
 #pragma once
 #include "frmMantLibros.h"
+#include "frmMantUsuarios.h"
 
 namespace RobotBibliotecaView {
 
@@ -38,6 +39,7 @@ namespace RobotBibliotecaView {
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
 	private: System::Windows::Forms::ToolStripMenuItem^ entregasToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoLibrosToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoUsuariosToolStripMenuItem;
 	protected:
 
 	private:
@@ -56,6 +58,7 @@ namespace RobotBibliotecaView {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->entregasToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mantenimientoLibrosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mantenimientoUsuariosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -71,7 +74,11 @@ namespace RobotBibliotecaView {
 			// 
 			// entregasToolStripMenuItem
 			// 
-			this->entregasToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->mantenimientoLibrosToolStripMenuItem });
+			this->entregasToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->mantenimientoLibrosToolStripMenuItem,
+					this->mantenimientoUsuariosToolStripMenuItem
+			});
+			this->entregasToolStripMenuItem->Enabled = false;
 			this->entregasToolStripMenuItem->Name = L"entregasToolStripMenuItem";
 			this->entregasToolStripMenuItem->Size = System::Drawing::Size(64, 20);
 			this->entregasToolStripMenuItem->Text = L"Entregas";
@@ -83,6 +90,13 @@ namespace RobotBibliotecaView {
 			this->mantenimientoLibrosToolStripMenuItem->Text = L"Mantenimiento libros";
 			this->mantenimientoLibrosToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoLibrosToolStripMenuItem_Click);
 			// 
+			// mantenimientoUsuariosToolStripMenuItem
+			// 
+			this->mantenimientoUsuariosToolStripMenuItem->Name = L"mantenimientoUsuariosToolStripMenuItem";
+			this->mantenimientoUsuariosToolStripMenuItem->Size = System::Drawing::Size(203, 22);
+			this->mantenimientoUsuariosToolStripMenuItem->Text = L"Mantenimiento usuarios";
+			this->mantenimientoUsuariosToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::mantenimientoUsuariosToolStripMenuItem_Click);
+			// 
 			// frmPrincipal
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -93,6 +107,7 @@ namespace RobotBibliotecaView {
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"frmPrincipal";
 			this->Text = L"Robot Biblioteca";
+			this->Load += gcnew System::EventHandler(this, &frmPrincipal::frmPrincipal_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
@@ -108,5 +123,12 @@ namespace RobotBibliotecaView {
 
 
 	}
-	};
+	private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void mantenimientoUsuariosToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmMantUsuarios^ ventanaMantUsuarios = gcnew frmMantUsuarios();
+		ventanaMantUsuarios->MdiParent = this;
+		ventanaMantUsuarios->Show();
+	}
+};
 }

@@ -117,10 +117,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LibroControler.h" />
+    <ClInclude Include="RegistroController.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LibroControler.cpp" />
+    <ClCompile Include="RegistroController.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

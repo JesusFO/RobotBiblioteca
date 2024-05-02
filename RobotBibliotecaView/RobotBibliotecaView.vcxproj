@@ -123,22 +123,7 @@
   <ItemGroup>
     <ClCompile Include="frmEditarDetalleEntrega.cpp" />
     <ClCompile Include="frmEditarLibro.cpp" />
-    <ClCompile Include="frmEditarMantenimiento.cpp" />
-    <ClCompile Include="frmEditarRobot.cpp" />
-    <ClCompile Include="frmEditarValoracionEntrega.cpp" />
-    <ClCompile Include="frmMantDetalleEntrega.cpp" />
-    <ClCompile Include="frmMantLibros.cpp" />
-    <ClCompile Include="frmMantMantenimiento.cpp" />
-    <ClCompile Include="frmMantMicrocontrolador.cpp" />
-    <ClCompile Include="frmMantRobot.cpp" />
-    <ClCompile Include="frmMantSeguimientoPrestamo.cpp" />
-    <ClCompile Include="frmMantValoracionEntrega.cpp" />
-    <ClCompile Include="frmNuevoDetalleEntrega.cpp" />
-    <ClCompile Include="frmNuevoLibro.cpp" />
-    <ClCompile Include="frmNuevoMantenimiento.cpp" />
-    <ClCompile Include="frmNuevoMicrocontrolador.cpp" />
-    <ClCompile Include="frmNuevoRobot.cpp" />
-    <ClCompile Include="frmNuevoValoracionEntrega.cpp" />
+
     <ClCompile Include="frmPrincipal.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -156,52 +141,19 @@
     <ClInclude Include="frmEditarLibro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmEditarMantenimiento.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmEditarRobot.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmEditarValoracionEntrega.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantDetalleEntrega.h">
+
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMantLibros.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmMantMantenimiento.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantMicrocontrolador.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantRobot.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantSeguimientoPrestamo.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantValoracionEntrega.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmNuevoDetalleEntrega.h">
+
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmNuevoLibro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmNuevoMantenimiento.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmNuevoMicrocontrolador.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmNuevoRobot.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmNuevoValoracionEntrega.h">
+
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmPrincipal.h">
@@ -230,38 +182,12 @@
     <EmbeddedResource Include="frmMantLibros.resx">
       <DependentUpon>frmMantLibros.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMantMantenimiento.resx">
-      <DependentUpon>frmMantMantenimiento.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMantMicrocontrolador.resx">
-      <DependentUpon>frmMantMicrocontrolador.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMantRobot.resx">
-      <DependentUpon>frmMantRobot.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMantSeguimientoPrestamo.resx">
-      <DependentUpon>frmMantSeguimientoPrestamo.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMantValoracionEntrega.resx">
-      <DependentUpon>frmMantValoracionEntrega.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoDetalleEntrega.resx">
-      <DependentUpon>frmNuevoDetalleEntrega.h</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoLibro.resx">
       <DependentUpon>frmNuevoLibro.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoMantenimiento.resx">
-      <DependentUpon>frmNuevoMantenimiento.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoMicrocontrolador.resx">
-      <DependentUpon>frmNuevoMicrocontrolador.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoRobot.resx">
-      <DependentUpon>frmNuevoRobot.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoValoracionEntrega.resx">
-      <DependentUpon>frmNuevoValoracionEntrega.h</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>
