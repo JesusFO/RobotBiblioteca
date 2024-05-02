@@ -14,7 +14,7 @@ ConstanciaDePrestamo::ConstanciaDePrestamo(int idConstancia, int idlibros, Usuar
 }
 
 
-
+//Pantalla Libro
 
 // Propiedades GET - SET
 
