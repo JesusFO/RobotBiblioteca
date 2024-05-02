@@ -6,38 +6,31 @@ using namespace System;
 
 SeguimientoPrestamo::SeguimientoPrestamo(){}
 
-SeguimientoPrestamo::SeguimientoPrestamo(int idSeguimentoPrestamo, int VencimientoPrestamoHoras, int RenovacionPrestamoHoras, String^ string, int numerodesolicitud, Usuario^ ObjUsuario) {
+SeguimientoPrestamo::SeguimientoPrestamo(int idSeguimientoPrestamo, int vencimientoPrestamoHoras, int renovacionPrestamoHoras, String^ string, int numerodesolicitud, Usuario^ objUsuario) {
 
-	this->idSeguimentoPrestamo = idSeguimentoPrestamo;
-	this->VencimientoPrestamoHoras = VencimientoPrestamoHoras;
-	this->RenovacionPrestamoHoras = RenovacionPrestamoHoras;
-	this->nombre = nombre;
+	this->idSeguimientoPrestamo = idSeguimientoPrestamo;
+	this->vencimientoPrestamoHoras = vencimientoPrestamoHoras;
+	this->renovacionPrestamoHoras = renovacionPrestamoHoras;
 	this->numerodesolicitud = numerodesolicitud;
-	this->ObjUsuario = ObjUsuario;
+	this->objUsuario = objUsuario;
 }
-int SeguimientoPrestamo::getidSeguimientoPrestamo() {
+int SeguimientoPrestamo::getIdSeguimientoPrestamo() {
 	return this->idSeguimientoPrestamo;
 }
-void SeguimientoPrestamo::setidSeguimientoPrestamo(int idSeguimientoPrestamo) {
+void SeguimientoPrestamo::setIdSeguimientoPrestamo(int idSeguimientoPrestamo) {
 	this->idSeguimientoPrestamo = idSeguimientoPrestamo;
 }
 int SeguimientoPrestamo::getVencimientoPrestamoHoras() {
-	return this->VencimientoPrestamoHoras;
+	return this->vencimientoPrestamoHoras;
 }
-void SeguimientoPrestamo::setVencimientoPrestamoHoras(int VencimientoPrestamoHoras) {
-	this->VencimientoPrestamoHoras = VencimientoPrestamoHoras;
+void SeguimientoPrestamo::setVencimientoPrestamoHoras(int vencimientoPrestamoHoras) {
+	this->vencimientoPrestamoHoras = vencimientoPrestamoHoras;
 }
 int SeguimientoPrestamo::getRenovacionPrestamoHoras() {
-	return this->RenovacionPrestamoHoras;
+	return this->renovacionPrestamoHoras;
 }
-void SeguimientoPrestamo::setRenovacionPrestamoHoras(int RenovacionPrestamoHoras) {
-	this->RenovacionPrestamoHoras = RenovacionPrestamoHoras;
-}
-String^ SeguimientoPrestamo::getnombre() {
-	return this->nombre;
-}
-void SeguimientoPrestamo::setnombre(String^ nombre) {
-	this->nombre = nombre;
+void SeguimientoPrestamo::setRenovacionPrestamoHoras(int renovacionPrestamoHoras) {
+	this->renovacionPrestamoHoras = renovacionPrestamoHoras;
 }
 int SeguimientoPrestamo::getnumerodesolicitud() {
 	return this->numerodesolicitud;
@@ -46,8 +39,8 @@ void SeguimientoPrestamo::setnumerodesolicitud(int numerodesolicitud) {
 	this->numerodesolicitud = numerodesolicitud;
 }
 Usuario^ SeguimientoPrestamo::getObjUsuario() {
-	return this->ObjUsuario;
+	return this->objUsuario;
 }
-void SeguimientoPrestamo::setObjUsuario(Usuario^ ObjUsuario) {
-	this->ObjUsuario = ObjUsuario;
+void SeguimientoPrestamo::setObjUsuario(Usuario^ objUsuario) {
+	this->objUsuario = objUsuario;
 }

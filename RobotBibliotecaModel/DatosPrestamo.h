@@ -10,7 +10,7 @@ namespace RobotBibliotecaModel {
 
 		int idDatosPrestamo;
 		int cantLibros;
-		int pesoLibros;
+		double pesoLibros;
 		String^ fechaDevolucion;
 		String^ horaDevolucion;
 		String^ fechaEntrega;
@@ -20,14 +20,17 @@ namespace RobotBibliotecaModel {
 
 		// Constructores
 		DatosPrestamo();
-		DatosPrestamo(int idDatosPrestamo, int cantLibros, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega);
-
+		DatosPrestamo(int idDatosPrestamo, int cantLibros,double pesoLibros, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega);
+		
 		// Propiedades GET - SET
 		int getIdDatosPrestamo();
 		void setIdDatosPrestamo(int idDatosPrestamo);
 
 		int getCantLibros();
 		void setCantLibros(int cantLibros);
+
+		double getPesoLibros();
+		void setPesoLibros(double pesoLibros);
 
 		String^ getFechaDevolucion();
 		void setFechaDevolucion(String^ fechaDevolucion);

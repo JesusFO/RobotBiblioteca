@@ -14,8 +14,6 @@ namespace RobotBibliotecaModel {
 	private:
 
 		int idSolicitudPrestamo;
-		int cantLibros;
-		int pesoLibros;
 		int numeroSolicitud;
 		int diasPrestamo;
 		ValidacionSolicitud^ objValidacionSolicitud;
@@ -24,7 +22,7 @@ namespace RobotBibliotecaModel {
 	public:
 
 		SolicitudPrestamo();
-		SolicitudPrestamo(int idSolicitudPrestamo, int cantLibros, int pesoLibros, int numeroSolicitud, int diasPrestamo, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega, ValidacionSolicitud^ objValidacionSolicitud, Libro^ objLibro, DetalleEntrega^ objDetalleEntrega);
+		SolicitudPrestamo(int idSolicitudPrestamo, int cantLibros, double pesoLibros, int numeroSolicitud, int diasPrestamo, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega, ValidacionSolicitud^ objValidacionSolicitud, Libro^ objLibro, DetalleEntrega^ objDetalleEntrega, List<DetalleEntrega^>^ listaDetalle);
 
 		// GET - SET
 
