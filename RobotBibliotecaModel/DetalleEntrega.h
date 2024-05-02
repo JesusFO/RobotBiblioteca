@@ -7,6 +7,8 @@
 
 using namespace System;
 
+
+
 namespace RobotBibliotecaModel {
 	public ref class DetalleEntrega {
 	private:
@@ -14,13 +16,13 @@ namespace RobotBibliotecaModel {
 		String^ DeclaracionPrestamo;
 		String^ UbicacionCampus;
 		SeguimientoPrestamo^ ObjSeguimiento;
-		ValoracionEntrega^ ObjValoracion;
+		ValoracionEntrega^ ObjValoracionEntrega;
 		Robot^ ObjRobot;
 		ConstanciaDePrestamo^ ObjConstancia;
 	public:
 		//BobsConstructor
 		DetalleEntrega();
-		DetalleEntrega(int idEntrega, String^ DeclaracionPrestamo, String^ UbicacionCampus, SeguimientoPrestamo^ ObjSeguimiento, ValoracionEntrega^ ObjValoracion, Robot^ ObjRobot, ConstanciaDePrestamo^ ObjConstancia);
+		DetalleEntrega(int idEntrega, String^ DeclaracionPrestamo, String^ UbicacionCampus, SeguimientoPrestamo^ ObjSeguimiento, ValoracionEntrega^ ObjValoracionEntrega, Robot^ ObjRobot, ConstanciaDePrestamo^ ObjConstancia);
 		//Get(ObtenerValor) - Set (DarValor)
 		//idEntrega
 		// //idEntrega
@@ -38,7 +40,7 @@ namespace RobotBibliotecaModel {
 		void setObjSeguimiento(SeguimientoPrestamo^ ObjSeguimiento);
 		//ObjValoracion
 		ValoracionEntrega^ getObjValoracion();
-		void setObjValoracion(ValoracionEntrega^ ObjValoracion);
+		void setObjValoracion(ValoracionEntrega^ objValoracionEntrega);
 		//ObjRobot
 		Robot^ getObjRobot();
 		void setObjRobot(Robot^ ObjRobot);

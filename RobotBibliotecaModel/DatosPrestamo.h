@@ -7,8 +7,7 @@ namespace RobotBibliotecaModel {
 	public ref class DatosPrestamo {
 
 	private:
-
-		int idDatosPrestamo;
+		int idDatosP;
 		int cantLibros;
 		double pesoLibros;
 		String^ fechaDevolucion;
@@ -17,14 +16,13 @@ namespace RobotBibliotecaModel {
 		String^ horaEntrega;
 
 	public:
-
 		// Constructores
 		DatosPrestamo();
-		DatosPrestamo(int idDatosPrestamo, int cantLibros,double pesoLibros, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega);
+		DatosPrestamo(int idDatosP, int cantLibros,double pesoLibros, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega);
 		
 		// Propiedades GET - SET
-		int getIdDatosPrestamo();
-		void setIdDatosPrestamo(int idDatosPrestamo);
+		int getIdDatosP();
+		void setIdDatosP(int idDatosP);
 
 		int getCantLibros();
 		void setCantLibros(int cantLibros);

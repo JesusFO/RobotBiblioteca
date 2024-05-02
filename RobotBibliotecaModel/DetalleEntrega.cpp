@@ -11,12 +11,12 @@ DetalleEntrega::DetalleEntrega() {
 
 }
 
-DetalleEntrega::DetalleEntrega(int idEntrega, String^ DeclaracionPrestamo, String^ UbicacionCampus, SeguimientoPrestamo^ ObjSeguimiento, ValoracionEntrega^ ObjValoracion, Robot^ ObjRobot, ConstanciaDePrestamo^ ObjConstancia) {
+DetalleEntrega::DetalleEntrega(int idEntrega, String^ DeclaracionPrestamo, String^ UbicacionCampus, SeguimientoPrestamo^ ObjSeguimiento, ValoracionEntrega^ ObjValoracionEntrega, Robot^ ObjRobot, ConstanciaDePrestamo^ ObjConstancia) {
 	this->idEntrega = idEntrega;
 	this->DeclaracionPrestamo = DeclaracionPrestamo;
 	this->UbicacionCampus = UbicacionCampus;
 	this->ObjSeguimiento = ObjSeguimiento;
-	this->ObjValoracion = ObjValoracion;
+	this->ObjValoracionEntrega = ObjValoracionEntrega;
 	this->ObjRobot = ObjRobot;
 	this->ObjConstancia = ObjConstancia;
 }
@@ -24,7 +24,7 @@ int DetalleEntrega::getidEntrega() {
 	return this->idEntrega;
 }
 void DetalleEntrega::setidEntrega(int idEntrega) {
-	this->idEntrega = idEntrega;
+	this->idEntrega = idEntrega; 
 }
 String^ DetalleEntrega::getDeclaracionPrestamo() {
 	return this->DeclaracionPrestamo;
@@ -45,10 +45,10 @@ void DetalleEntrega::setObjSeguimiento(SeguimientoPrestamo^ ObjSeguimiento) {
 	this->ObjSeguimiento = ObjSeguimiento;
 }
 ValoracionEntrega^ DetalleEntrega::getObjValoracion() {
-	return this->ObjValoracion;
+	return this->ObjValoracionEntrega;
 }
-void DetalleEntrega::setObjValoracion(ValoracionEntrega^ ObjValoracion) {
-	this->ObjValoracion = ObjValoracion;
+void DetalleEntrega::setObjValoracion(ValoracionEntrega^ ObjValoracionEntrega) {
+	this->ObjValoracionEntrega = ObjValoracionEntrega;
 }
 Robot^ DetalleEntrega::getObjRobot() {
 	return this->ObjRobot;

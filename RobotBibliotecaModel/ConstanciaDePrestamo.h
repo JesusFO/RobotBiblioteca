@@ -9,7 +9,7 @@ namespace RobotBibliotecaModel {
 
 	public ref class ConstanciaDePrestamo : DatosPrestamo {
 	private:
-		int idConstanciaDePrestamo;
+		int idConstancia;
 		int idlibros;
 		Usuario^ objUsuario;
 
@@ -17,11 +17,11 @@ namespace RobotBibliotecaModel {
 
 		//Constructores
 		ConstanciaDePrestamo();
-		ConstanciaDePrestamo(int idConstanciaDePrestamo, int idlibros, Usuario^ objUsuario, int idDatosPrestamo, int cantLibros, int pesoLibros, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega);
+		ConstanciaDePrestamo(int idConstancia, int idlibros, Usuario^ objUsuario, int idDatosP, int cantLibros, double pesoLibros, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega);
 
 		//Propiedades GET SET
-		int getIdConstanciaDePrestamo();
-		void setIdConstanciaDePrestamo(int idConstanciaDePrestamo);
+		int getIdConstancia();
+		void setIdConstancia(int idConstancia);
 
 		int getIdlibros();
 		void setIdlibros(int idlibros);
@@ -29,14 +29,14 @@ namespace RobotBibliotecaModel {
 		Usuario^ getObjUsuario();
 		void setObjUsuario(Usuario^ objUsuario);
 
-		int getIdDatosPrestamo();
-		void setIdDatosPrestamo(int idDatosPrestamo);
+		int getIdDatosP();
+		void setIdDatosP(int idDatosP);
 
 		int getCantLibros();
 		void setCantLibros(int cantLibros);
 
-		int getPesoLibros();
-		void setPesoLibros(int pesoLibros);
+		double getPesoLibros();
+		void setPesoLibros(double pesoLibros);
 
 		String^ getFechaDevolucion();
 		void setFechaDevolucion(String^ fechaDevolucion);
