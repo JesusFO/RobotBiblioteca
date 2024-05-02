@@ -11,9 +11,9 @@ namespace RobotBibliotecaModel {
 
 	private:
 		int idRegistro;
-		String^ Direccion;
+		String^ direccion;
 		String^ DNI;
-		String^ Contraseña;
+		String^ contraseña;
 		String^ fecha;
 		Usuario^ objUsuario;
 

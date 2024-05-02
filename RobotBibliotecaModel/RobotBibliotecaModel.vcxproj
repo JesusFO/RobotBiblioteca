@@ -150,6 +150,7 @@
     <ClCompile Include="Repositorio.cpp" />
     <ClCompile Include="Robot.cpp" />
     <ClCompile Include="SeguimientoPrestamo.cpp" />
+    <ClCompile Include="SolicitudMantenimiento.cpp" />
     <ClCompile Include="SolicitudPrestamo.cpp" />
     <ClCompile Include="Usuario.cpp" />
     <ClCompile Include="ValidacionSolicitud.cpp" />

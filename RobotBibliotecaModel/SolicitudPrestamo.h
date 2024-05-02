@@ -21,7 +21,6 @@ namespace RobotBibliotecaModel {
 		ValidacionSolicitud^ objValidacionSolicitud;
 		Libro^ objLibro;
 		List<DetalleEntrega^>^ listaDetalle;
-
 	public:
 
 		SolicitudPrestamo();

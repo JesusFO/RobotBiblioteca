@@ -2,13 +2,10 @@
 #include "Usuario.h"
 
 using namespace System;
-<<<<<<< HEAD
+
 
 namespace RobotBibliotecaModel {
 
-=======
-namespace RobotBibliotecaModel {
->>>>>>> 3c32e9d1c38d62cc8ea8e41445c3c40b88e705e8
 	public ref class SeguimientoPrestamo {
 	private:
 		int idSeguimentoPrestamo;
