@@ -6,9 +6,9 @@ DatosPrestamo::DatosPrestamo() {
 
 }
 
-DatosPrestamo::DatosPrestamo(int idDatosPrestamo, int cantLibros, double pesoLibros, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega) {
+DatosPrestamo::DatosPrestamo(int idDatosP, int cantLibros, double pesoLibros, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega) {
 
-	this->idDatosPrestamo = idDatosPrestamo;
+	this->idDatosP = idDatosP;
 	this->cantLibros = cantLibros;
 	this->pesoLibros = pesoLibros;
 	this->fechaDevolucion = fechaDevolucion;
@@ -19,12 +19,12 @@ DatosPrestamo::DatosPrestamo(int idDatosPrestamo, int cantLibros, double pesoLib
 }
 
 // Propiedades GET - SET
-int DatosPrestamo::getIdDatosPrestamo() {
-	return this->idDatosPrestamo;
+int DatosPrestamo::getIdDatosP() {
+	return this->idDatosP;
 }
 
-void DatosPrestamo::setIdDatosPrestamo(int idDatosPrestamo) {
-	this->idDatosPrestamo = idDatosPrestamo;
+void DatosPrestamo::setIdDatosP(int idDatosP) {
+	this->idDatosP = idDatosP;
 }
 
 int DatosPrestamo::getCantLibros() {

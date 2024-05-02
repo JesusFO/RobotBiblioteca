@@ -13,7 +13,7 @@ namespace RobotBibliotecaModel {
 
 	private:
 
-		int idSolicitudPrestamo;
+		int idSolicitudP;
 		int numeroSolicitud;
 		int diasPrestamo;
 		ValidacionSolicitud^ objValidacionSolicitud;
@@ -22,21 +22,25 @@ namespace RobotBibliotecaModel {
 	public:
 
 		SolicitudPrestamo();
-		SolicitudPrestamo(int idSolicitudPrestamo, int cantLibros, double pesoLibros, int numeroSolicitud, int diasPrestamo, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega, ValidacionSolicitud^ objValidacionSolicitud, Libro^ objLibro, DetalleEntrega^ objDetalleEntrega, List<DetalleEntrega^>^ listaDetalle);
+		SolicitudPrestamo(int idSolicitudP, int cantLibros, double pesoLibros, int idDatosP, int numeroSolicitud, int diasPrestamo, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega, ValidacionSolicitud^ objValidacionSolicitud, Libro^ objLibro, List<DetalleEntrega^>^ listaDetalle);
+		//SolicitudPrestamo(int idSolicitudP, int cantLibros, int idDatosP, double pesoLibros, int numeroSolicitud, int diasPrestamo, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega, ValidacionSolicitud^ objValidacionSolicitud, Libro^ objLibro, List<DetalleEntrega^>^ listaDetalle);
 
 		// GET - SET
 
-		int getIdSolicitudPrestamo();
-		void setIdSolicitudPrestamo(int idSolicitudPrestamo);
+		int getIdSolicitudP();
+		void setIdSolicitudP(int idSolicitudP);
 
 		int getCantLibros();
-		void setCantLibros(int cantLibros);
+		void setCantLibros(int cantLibros);		
 
 		int getPesoLibros();
 		void setPesoLibros(int pesoLibros);
 
 		int getNumeroSolicitud();
 		void setNumeroSolicitud(int numeroSolicitud);
+
+		int getIdDatosP();
+		void setIdDatosP(int idDatosP);
 
 		int getDiasPrestamo();
 		void setDiasPrestamo(int diasPrestamo);
