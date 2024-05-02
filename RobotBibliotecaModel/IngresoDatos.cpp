@@ -14,7 +14,7 @@ IngresoDatos::IngresoDatos(int idIngreso, int codigo, String^ correo, String^ cu
 	this->telefono = telefono;
 }
 
-int IngresoDatos::getIdIngreso() {
+/*int IngresoDatos::getIdIngreso() {
 	return this->idIngreso;
 }
 void IngresoDatos::setIdIngreso(int idIngreso) {
@@ -45,4 +45,4 @@ String^ IngresoDatos::getTelefono() {
 }
 void IngresoDatos::setTelefono(String^ telefono) {
 	this->telefono = telefono;
-}
+}*/

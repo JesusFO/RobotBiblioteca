@@ -16,7 +16,7 @@ Registro::Registro(int idRegistro, String^ direccion, String^ DNI, String^ contr
 	this->objUsuario = objUsuario;
 }
 
-/*int Registro::getIdRegistro() {
+int Registro::getIdRegistro() {
 	return this->idRegistro;
 }
 void Registro::setIdRegistro(int idRegistro) {
@@ -55,6 +55,7 @@ void Registro::setObjUsuario(Usuario^ objUsuario) {
 	this->objUsuario = objUsuario;
 }
 
+/*
 int Registro::getIdIngreso() {
 	return this->idIngreso;
 }

@@ -27,8 +27,7 @@ namespace RobotBibliotecaModel {
 
 		// GET - SET
 
-		int getIdSolicitudP();
-		void setIdSolicitudP(int idSolicitudP);
+		/*
 
 		int getCantLibros();
 		void setCantLibros(int cantLibros);		
@@ -36,14 +35,12 @@ namespace RobotBibliotecaModel {
 		int getPesoLibros();
 		void setPesoLibros(int pesoLibros);
 
-		int getNumeroSolicitud();
-		void setNumeroSolicitud(int numeroSolicitud);
+
 
 		int getIdDatosP();
 		void setIdDatosP(int idDatosP);
 
-		int getDiasPrestamo();
-		void setDiasPrestamo(int diasPrestamo);
+
 
 		String^ getFechaDevolucion();
 		void setFechaDevolucion(String^ fechaDevolucion);
@@ -57,14 +54,27 @@ namespace RobotBibliotecaModel {
 		String^ getHoraEntrega();
 		void setHoraEntrega(String^ horaEntrega);
 
+		DetalleEntrega^ getObjDetalleEntrega();
+		void setObjDetalleEntrega(DetalleEntrega^ objDetalleEntrega);*/
+
+		int getIdSolicitudP();
+		void setIdSolicitudP(int idSolicitudP);
+
 		ValidacionSolicitud^ getObjValidacionSolicitud();
 		void setObjValidacionSolicitud(ValidacionSolicitud^ objValidacionSolicitud);
 
 		Libro^ getObjLibro();
 		void setObjLibro(Libro^ objLibro);
 
-		DetalleEntrega^ getObjDetalleEntrega();
-		void setObjDetalleEntrega(DetalleEntrega^ objDetalleEntrega);
+		int getNumeroSolicitud();
+		void setNumeroSolicitud(int numeroSolicitud);
+
+		int getDiasPrestamo();
+		void setDiasPrestamo(int diasPrestamo);
+
+
 	};
 
 }
+
+

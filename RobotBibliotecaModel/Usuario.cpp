@@ -14,7 +14,7 @@ Usuario::Usuario(int idUsuario, String^ nombreCompleto, String^ fechaRecojo, Str
 	this->Estado = Estado;
 }
 
-/*int Usuario::getIdUsuario() {
+int Usuario::getIdUsuario() {
 	return this->idUsuario;
 }
 void Usuario::setIdUsuario(int idUsuario) {
@@ -24,7 +24,7 @@ void Usuario::setIdUsuario(int idUsuario) {
 String^ Usuario::getNombreCompleto() {
 	return this->nombreCompleto;
 }
-void Usuario::setNombreCompleto(int nombreCompleto) {
+void Usuario::setNombreCompleto(String^ nombreCompleto) {
 	this-> nombreCompleto = nombreCompleto;
 }
 
@@ -46,4 +46,4 @@ String^ Usuario::getEstado() {
 }
 void Usuario::setEstado(String^ telefono) {
 	this-> Estado = Estado;
-}*/
+}

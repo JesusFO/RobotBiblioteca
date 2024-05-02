@@ -115,6 +115,12 @@
       <Project>{60e15b3a-7150-4171-9b62-1268e0c54408}</Project>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LibroControler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LibroControler.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
