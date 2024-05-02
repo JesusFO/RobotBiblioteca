@@ -2,10 +2,8 @@
 
 using namespace System;
 
-namespace RobotBooks_G6_Model {
-
+namespace RobotBibliotecaModel {
 	public ref class Microcontrolador {
-
 	private:
 		int idMicrocontrolador;
 		int NumeroDeSerie;
@@ -15,6 +13,18 @@ namespace RobotBooks_G6_Model {
 		String^ Datasheet;
 	public:
 		Microcontrolador();
-		Microcontrolador(int idMicrocontrolador,int NumeroDeSerie,int CantPines,String^ Fabricante,	String^ nombre,String^ Datasheet);
+		Microcontrolador(int idMicrocontrolador, int NumeroDeSerie, int CantPines, String^ Fabricante, String^ nombre, String^ Datasheet);
+		int getidMicrocontrolador();
+		void setidMicrocontrolador(int idMicrocontrolador);
+		int getNumeroDeSerie();
+		void setNumeroDeSerie(int NumeroDeSerie);
+		int getCantPines();
+		void setCantPines(int CantPines);
+		String^ getFabricante();
+		void setFabricante(String^ Fabricante);
+		String^ getnombre();
+		void setnombre(String^ nombre);
+		String^ getDatasheet();
+		void setDatasheet(String^ Datasheet);
 	};
 }
