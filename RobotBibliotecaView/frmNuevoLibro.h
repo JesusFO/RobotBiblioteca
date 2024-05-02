@@ -72,24 +72,24 @@ namespace RobotBibliotecaView {
 		void InitializeComponent(void)
 		{
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
-			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
 			this->comboBox3 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
@@ -115,102 +115,76 @@ namespace RobotBibliotecaView {
 			this->groupBox1->Controls->Add(this->label3);
 			this->groupBox1->Controls->Add(this->label2);
 			this->groupBox1->Controls->Add(this->label1);
-			this->groupBox1->Location = System::Drawing::Point(30, 28);
+			this->groupBox1->Location = System::Drawing::Point(40, 34);
+			this->groupBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(472, 349);
+			this->groupBox1->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->groupBox1->Size = System::Drawing::Size(629, 430);
 			this->groupBox1->TabIndex = 0;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Datos del Libro";
 			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmNuevoLibro::groupBox1_Enter);
 			// 
-			// label1
+			// comboBox3
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(38, 35);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(41, 13);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"idLibro:";
-			this->label1->Click += gcnew System::EventHandler(this, &frmNuevoLibro::label1_Click);
+			this->comboBox3->FormattingEnabled = true;
+			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Nuevo", L"Seminuevo", L"Deteriorado" });
+			this->comboBox3->Location = System::Drawing::Point(283, 155);
+			this->comboBox3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->comboBox3->Name = L"comboBox3";
+			this->comboBox3->Size = System::Drawing::Size(179, 24);
+			this->comboBox3->TabIndex = 17;
+			this->comboBox3->SelectedIndexChanged += gcnew System::EventHandler(this, &frmNuevoLibro::comboBox3_SelectedIndexChanged);
 			// 
-			// label2
+			// comboBox2
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(38, 65);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(38, 13);
-			this->label2->TabIndex = 1;
-			this->label2->Text = L"Título:";
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Disponible", L"Ocupado" });
+			this->comboBox2->Location = System::Drawing::Point(283, 356);
+			this->comboBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(179, 24);
+			this->comboBox2->TabIndex = 16;
 			// 
-			// label3
+			// textBox6
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(38, 95);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(57, 13);
-			this->label3->TabIndex = 2;
-			this->label3->Text = L"Categoría:";
+			this->textBox6->Location = System::Drawing::Point(283, 311);
+			this->textBox6->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(179, 22);
+			this->textBox6->TabIndex = 15;
 			// 
-			// label4
+			// textBox5
 			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(38, 126);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(43, 13);
-			this->label4->TabIndex = 3;
-			this->label4->Text = L"Estado:";
+			this->textBox5->Location = System::Drawing::Point(283, 267);
+			this->textBox5->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(179, 22);
+			this->textBox5->TabIndex = 14;
 			// 
-			// label5
+			// textBox4
 			// 
-			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(38, 155);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(45, 13);
-			this->label5->TabIndex = 4;
-			this->label5->Text = L"Edición:";
+			this->textBox4->Location = System::Drawing::Point(283, 228);
+			this->textBox4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(179, 22);
+			this->textBox4->TabIndex = 13;
 			// 
-			// label6
+			// textBox3
 			// 
-			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(38, 188);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(47, 13);
-			this->label6->TabIndex = 5;
-			this->label6->Text = L"Reseña:";
+			this->textBox3->Location = System::Drawing::Point(283, 187);
+			this->textBox3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(179, 22);
+			this->textBox3->TabIndex = 12;
 			// 
-			// label7
+			// textBox2
 			// 
-			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(38, 220);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(49, 13);
-			this->label7->TabIndex = 6;
-			this->label7->Text = L"Etiqueta:";
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(38, 256);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(35, 13);
-			this->label8->TabIndex = 7;
-			this->label8->Text = L"Autor:";
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(38, 292);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(75, 13);
-			this->label9->TabIndex = 8;
-			this->label9->Text = L"Disponibilidad:";
-			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(212, 32);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(135, 20);
-			this->textBox1->TabIndex = 9;
+			this->textBox2->Location = System::Drawing::Point(283, 80);
+			this->textBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(179, 22);
+			this->textBox2->TabIndex = 11;
 			// 
 			// comboBox1
 			// 
@@ -219,70 +193,117 @@ namespace RobotBibliotecaView {
 				L"Informatica", L"Matematica", L"Fisica", L"Psicologia",
 					L"Economia", L"Historia"
 			});
-			this->comboBox1->Location = System::Drawing::Point(212, 95);
+			this->comboBox1->Location = System::Drawing::Point(283, 117);
+			this->comboBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(135, 21);
+			this->comboBox1->Size = System::Drawing::Size(179, 24);
 			this->comboBox1->TabIndex = 10;
 			// 
-			// textBox2
+			// textBox1
 			// 
-			this->textBox2->Location = System::Drawing::Point(212, 65);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(135, 20);
-			this->textBox2->TabIndex = 11;
+			this->textBox1->Location = System::Drawing::Point(283, 39);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(179, 22);
+			this->textBox1->TabIndex = 9;
 			// 
-			// textBox3
+			// label9
 			// 
-			this->textBox3->Location = System::Drawing::Point(212, 152);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(135, 20);
-			this->textBox3->TabIndex = 12;
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(51, 359);
+			this->label9->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(97, 16);
+			this->label9->TabIndex = 8;
+			this->label9->Text = L"Disponibilidad:";
 			// 
-			// textBox4
+			// label8
 			// 
-			this->textBox4->Location = System::Drawing::Point(212, 185);
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(135, 20);
-			this->textBox4->TabIndex = 13;
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(51, 315);
+			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(41, 16);
+			this->label8->TabIndex = 7;
+			this->label8->Text = L"Autor:";
 			// 
-			// textBox5
+			// label7
 			// 
-			this->textBox5->Location = System::Drawing::Point(212, 217);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(135, 20);
-			this->textBox5->TabIndex = 14;
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(51, 271);
+			this->label7->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(59, 16);
+			this->label7->TabIndex = 6;
+			this->label7->Text = L"Etiqueta:";
 			// 
-			// textBox6
+			// label6
 			// 
-			this->textBox6->Location = System::Drawing::Point(212, 253);
-			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(135, 20);
-			this->textBox6->TabIndex = 15;
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(51, 231);
+			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(58, 16);
+			this->label6->TabIndex = 5;
+			this->label6->Text = L"Reseña:";
 			// 
-			// comboBox2
+			// label5
 			// 
-			this->comboBox2->FormattingEnabled = true;
-			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Disponible", L"Ocupado" });
-			this->comboBox2->Location = System::Drawing::Point(212, 289);
-			this->comboBox2->Name = L"comboBox2";
-			this->comboBox2->Size = System::Drawing::Size(135, 21);
-			this->comboBox2->TabIndex = 16;
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(51, 191);
+			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(55, 16);
+			this->label5->TabIndex = 4;
+			this->label5->Text = L"Edición:";
 			// 
-			// comboBox3
+			// label4
 			// 
-			this->comboBox3->FormattingEnabled = true;
-			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Nuevo", L"Seminuevo", L"Deteriorado" });
-			this->comboBox3->Location = System::Drawing::Point(212, 126);
-			this->comboBox3->Name = L"comboBox3";
-			this->comboBox3->Size = System::Drawing::Size(135, 21);
-			this->comboBox3->TabIndex = 17;
-			this->comboBox3->SelectedIndexChanged += gcnew System::EventHandler(this, &frmNuevoLibro::comboBox3_SelectedIndexChanged);
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(51, 155);
+			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(53, 16);
+			this->label4->TabIndex = 3;
+			this->label4->Text = L"Estado:";
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(51, 117);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(69, 16);
+			this->label3->TabIndex = 2;
+			this->label3->Text = L"Categoría:";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(51, 80);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(43, 16);
+			this->label2->TabIndex = 1;
+			this->label2->Text = L"Título:";
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(51, 43);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(51, 16);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"idLibro:";
+			this->label1->Click += gcnew System::EventHandler(this, &frmNuevoLibro::label1_Click);
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(110, 434);
+			this->button1->Location = System::Drawing::Point(145, 497);
+			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(100, 28);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Grabar";
 			this->button1->UseVisualStyleBackColor = true;
@@ -290,21 +311,23 @@ namespace RobotBibliotecaView {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(348, 434);
+			this->button2->Location = System::Drawing::Point(470, 497);
+			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->Size = System::Drawing::Size(100, 28);
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"Cancelar";
 			this->button2->UseVisualStyleBackColor = true;
 			// 
 			// frmNuevoLibro
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(544, 492);
+			this->ClientSize = System::Drawing::Size(725, 606);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->groupBox1);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"frmNuevoLibro";
 			this->Text = L"Nuevo Libro";
 			this->groupBox1->ResumeLayout(false);

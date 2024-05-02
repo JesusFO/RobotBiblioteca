@@ -1,4 +1,6 @@
 #pragma once
+#include "frmNuevoRobot.h"
+#include "frmEditarRobot.h"
 
 namespace RobotBibliotecaView {
 
@@ -90,15 +92,15 @@ namespace RobotBibliotecaView {
 		void InitializeComponent(void)
 		{
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -120,6 +122,43 @@ namespace RobotBibliotecaView {
 			this->dataGridView1->Size = System::Drawing::Size(670, 360);
 			this->dataGridView1->TabIndex = 3;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantRobot::dataGridView1_CellContentClick);
+			// 
+			// Column1
+			// 
+			this->Column1->AutoSizeMode = System::Windows::Forms::DataGridViewAutoSizeColumnMode::AllCells;
+			this->Column1->HeaderText = L"idRobot";
+			this->Column1->MinimumWidth = 6;
+			this->Column1->Name = L"Column1";
+			this->Column1->Width = 84;
+			// 
+			// Column2
+			// 
+			this->Column2->HeaderText = L"Velocidad";
+			this->Column2->MinimumWidth = 6;
+			this->Column2->Name = L"Column2";
+			this->Column2->Width = 125;
+			// 
+			// Column3
+			// 
+			this->Column3->HeaderText = L"Bateria";
+			this->Column3->MinimumWidth = 6;
+			this->Column3->Name = L"Column3";
+			this->Column3->Width = 125;
+			// 
+			// Column4
+			// 
+			this->Column4->AutoSizeMode = System::Windows::Forms::DataGridViewAutoSizeColumnMode::AllCells;
+			this->Column4->HeaderText = L"CapacidadDeCarga";
+			this->Column4->MinimumWidth = 6;
+			this->Column4->Name = L"Column4";
+			this->Column4->Width = 158;
+			// 
+			// Column5
+			// 
+			this->Column5->HeaderText = L"Dimensiones";
+			this->Column5->MinimumWidth = 6;
+			this->Column5->Name = L"Column5";
+			this->Column5->Width = 125;
 			// 
 			// groupBox1
 			// 
@@ -170,43 +209,6 @@ namespace RobotBibliotecaView {
 			this->label1->Text = L"Tipo:";
 			this->label1->Click += gcnew System::EventHandler(this, &frmMantRobot::label1_Click);
 			// 
-			// Column1
-			// 
-			this->Column1->AutoSizeMode = System::Windows::Forms::DataGridViewAutoSizeColumnMode::AllCells;
-			this->Column1->HeaderText = L"idRobot";
-			this->Column1->MinimumWidth = 6;
-			this->Column1->Name = L"Column1";
-			this->Column1->Width = 84;
-			// 
-			// Column2
-			// 
-			this->Column2->HeaderText = L"Velocidad";
-			this->Column2->MinimumWidth = 6;
-			this->Column2->Name = L"Column2";
-			this->Column2->Width = 125;
-			// 
-			// Column3
-			// 
-			this->Column3->HeaderText = L"Bateria";
-			this->Column3->MinimumWidth = 6;
-			this->Column3->Name = L"Column3";
-			this->Column3->Width = 125;
-			// 
-			// Column4
-			// 
-			this->Column4->AutoSizeMode = System::Windows::Forms::DataGridViewAutoSizeColumnMode::AllCells;
-			this->Column4->HeaderText = L"CapacidadDeCarga";
-			this->Column4->MinimumWidth = 6;
-			this->Column4->Name = L"Column4";
-			this->Column4->Width = 158;
-			// 
-			// Column5
-			// 
-			this->Column5->HeaderText = L"Dimensiones";
-			this->Column5->MinimumWidth = 6;
-			this->Column5->Name = L"Column5";
-			this->Column5->Width = 125;
-			// 
 			// button4
 			// 
 			this->button4->Location = System::Drawing::Point(593, 510);
@@ -226,6 +228,7 @@ namespace RobotBibliotecaView {
 			this->button3->TabIndex = 11;
 			this->button3->Text = L"Editar";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &frmMantRobot::button3_Click);
 			// 
 			// button2
 			// 
@@ -236,6 +239,7 @@ namespace RobotBibliotecaView {
 			this->button2->TabIndex = 10;
 			this->button2->Text = L"Nuevo";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmMantRobot::button2_Click);
 			// 
 			// frmMantRobot
 			// 
@@ -264,6 +268,12 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, Sys
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void frmMantRobot_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmNuevoRobot^ ventanaNuevoRobot = gcnew frmNuevoRobot();
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	frmEditarRobot^ ventanaEditarRobot = gcnew frmEditarRobot();
 }
 };
 }

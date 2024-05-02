@@ -92,7 +92,7 @@ namespace RobotBibliotecaView {
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(321, 472);
+			this->button4->Location = System::Drawing::Point(349, 468);
 			this->button4->Margin = System::Windows::Forms::Padding(4);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(116, 28);
@@ -102,7 +102,7 @@ namespace RobotBibliotecaView {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(171, 472);
+			this->button3->Location = System::Drawing::Point(201, 468);
 			this->button3->Margin = System::Windows::Forms::Padding(4);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(100, 28);
@@ -112,7 +112,7 @@ namespace RobotBibliotecaView {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(23, 472);
+			this->button2->Location = System::Drawing::Point(51, 468);
 			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(100, 28);
@@ -174,7 +174,7 @@ namespace RobotBibliotecaView {
 				this->Column1,
 					this->Column2, this->Column3
 			});
-			this->dataGridView1->Location = System::Drawing::Point(23, 125);
+			this->dataGridView1->Location = System::Drawing::Point(51, 121);
 			this->dataGridView1->Margin = System::Windows::Forms::Padding(4);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 51;

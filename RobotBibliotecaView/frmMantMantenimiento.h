@@ -1,5 +1,6 @@
 #pragma once
-
+#include "frmNuevoMantenimiento.h"
+#include "frmEditarMantenimiento.h"
 namespace RobotBibliotecaView {
 
 	using namespace System;
@@ -98,6 +99,7 @@ namespace RobotBibliotecaView {
 			this->button3->TabIndex = 21;
 			this->button3->Text = L"Editar";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &frmMantMantenimiento::button3_Click);
 			// 
 			// button2
 			// 
@@ -108,6 +110,7 @@ namespace RobotBibliotecaView {
 			this->button2->TabIndex = 20;
 			this->button2->Text = L"Nuevo";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmMantMantenimiento::button2_Click);
 			// 
 			// groupBox1
 			// 
@@ -216,5 +219,11 @@ namespace RobotBibliotecaView {
 #pragma endregion
 	private: System::Void frmMantMantenimiento_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmNuevoMantenimiento^ ventanaNuevoMantenimiento = gcnew frmNuevoMantenimiento();
+	}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmEditarMantenimiento^ ventanaEditarMantenimiento = gcnew frmEditarMantenimiento();
+}
+};
 }

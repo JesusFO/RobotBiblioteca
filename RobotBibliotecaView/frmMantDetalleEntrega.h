@@ -1,5 +1,6 @@
 #pragma once
-
+#include "frmNuevoDetalleEntrega.h"
+#include "frmEditarDetalleEntrega.h"
 namespace RobotBibliotecaView {
 
 	using namespace System;
@@ -138,6 +139,7 @@ namespace RobotBibliotecaView {
 			this->button3->TabIndex = 16;
 			this->button3->Text = L"Editar";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &frmMantDetalleEntrega::button3_Click);
 			// 
 			// button2
 			// 
@@ -148,6 +150,7 @@ namespace RobotBibliotecaView {
 			this->button2->TabIndex = 15;
 			this->button2->Text = L"Nuevo";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmMantDetalleEntrega::button2_Click);
 			// 
 			// groupBox1
 			// 
@@ -280,5 +283,11 @@ namespace RobotBibliotecaView {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmNuevoDetalleEntrega^ ventanaNuevoDetalleEntrega = gcnew frmNuevoDetalleEntrega();
+	}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmEditarDetalleEntrega^ ventanaEditarDetalleEntrega = gcnew frmEditarDetalleEntrega();
+}
+};
 }

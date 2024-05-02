@@ -237,6 +237,7 @@ namespace RobotBibliotecaView {
 			this->button2->TabIndex = 7;
 			this->button2->Text = L"Nuevo";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmMantMicrocontrolador::button2_Click);
 			// 
 			// frmMantMicrocontrolador
 			// 
@@ -262,6 +263,8 @@ namespace RobotBibliotecaView {
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
