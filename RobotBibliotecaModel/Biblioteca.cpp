@@ -9,6 +9,3 @@
  * Biblioteca implementation
  */
 
-Biblioteca::Biblioteca() {}
-
-RobotBibliotecaModel::Biblioteca::Biblioteca ()
