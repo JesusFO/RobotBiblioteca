@@ -36,7 +36,7 @@ List<Libro^>^ LibroControler::buscarLibrosxTitulo(String^ Titulo) {
 	return listaLibros;
 }
 
-List<Libro^>^ LibroControler::buscarLibrosAll() {
+List<Libro^>^ RobotBibliotecaControler::LibroControler::buscarLibrosAll() {
 
 	List<Libro^>^ listaLibros = gcnew List<Libro^>();
 	array<String^>^ lineas = File::ReadAllLines("Libros.txt");
