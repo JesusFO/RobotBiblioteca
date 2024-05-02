@@ -20,10 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{60E15B3A-7150-4171-9B62-1268E0C54408}</ProjectGuid>
+    <ProjectGuid>{8AEECEE2-DF6A-4CC0-9863-A3B743C086C9}</ProjectGuid>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>RobotBibliotecaModel</RootNamespace>
+    <RootNamespace>RobotBibliotecaView</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -42,7 +42,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CLRSupport>true</CLRSupport>
@@ -81,6 +81,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -111,50 +113,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Biblioteca.h" />
-    <ClInclude Include="Bibliotecario.h" />
-    <ClInclude Include="ConstanciaDePrestamo.h" />
-    <ClInclude Include="DatosPrestamo.h" />
-    <ClInclude Include="DetalleEntrega.h" />
-    <ClInclude Include="Devolucion.h" />
-    <ClInclude Include="IngresoDatos.h" />
-    <ClInclude Include="Libro.h" />
-    <ClInclude Include="Mantenimiento.h" />
-    <ClInclude Include="Microcontrolador.h" />
-    <ClInclude Include="Multa.h" />
-    <ClInclude Include="Notificacion.h" />
-    <ClInclude Include="Registro.h" />
-    <ClInclude Include="Repositorio.h" />
-    <ClInclude Include="Robot.h" />
-    <ClInclude Include="SeguimientoPrestamo.h" />
-    <ClInclude Include="SolicitudMantenimiento.h" />
-    <ClInclude Include="SolicitudPrestamo.h" />
-    <ClInclude Include="Usuario.h" />
-    <ClInclude Include="ValidacionSolicitud.h" />
-    <ClInclude Include="ValoracionEntrega.h" />
+    <ProjectReference Include="..\RobotBibliotecaController\RobotBibliotecaController.vcxproj">
+      <Project>{3d46e016-aaee-460a-9910-b57b86c68c88}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RobotBibliotecaModel\RobotBibliotecaModel.vcxproj">
+      <Project>{60e15b3a-7150-4171-9b62-1268e0c54408}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Biblioteca.cpp" />
-    <ClCompile Include="Bibliotecario.cpp" />
-    <ClCompile Include="ConstanciaDePrestamo.cpp" />
-    <ClCompile Include="DatosPrestamo.cpp" />
-    <ClCompile Include="DetalleEntrega.cpp" />
-    <ClCompile Include="Devolucion.cpp" />
-    <ClCompile Include="IngresoDatos.cpp" />
-    <ClCompile Include="Libro.cpp" />
-    <ClCompile Include="Mantenimiento.cpp" />
-    <ClCompile Include="Microcontrolador.cpp" />
-    <ClCompile Include="Multa.cpp" />
-    <ClCompile Include="Notificacion.cpp" />
-    <ClCompile Include="Registro.cpp" />
-    <ClCompile Include="Repositorio.cpp" />
-    <ClCompile Include="Robot.cpp" />
-    <ClCompile Include="SeguimientoPrestamo.cpp" />
-    <ClCompile Include="SolicitudMantenimiento.cpp" />
-    <ClCompile Include="SolicitudPrestamo.cpp" />
-    <ClCompile Include="Usuario.cpp" />
-    <ClCompile Include="ValidacionSolicitud.cpp" />
-    <ClCompile Include="ValoracionEntrega.cpp" />
+    <ClCompile Include="frmPrincipal.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frmPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
