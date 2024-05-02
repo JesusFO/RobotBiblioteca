@@ -10,24 +10,24 @@ using namespace System;
 
 namespace RobotBibliotecaModel {
     public ref class Libro {
-    private:
+    public:
         property int IdLibro;
         property String^ Titulo;
         property String^ Categoria;
         property String^ Estado;
         property int Edicion;
-        property String^ Reseña;
+        property String^ Resena;
         property String^ Etiqueta;
         property String^ AutorLibro;
         property String^ Disponibilidad;
-    public:
+
         Libro() {};
-        Libro(String^ titulo, String^ idlibro, String^ categoria, String^ estado, int edicion, String^ reseña, String^ etiqueta, String^ autorLibro, String^ disponibilidad) {
+        Libro( int idlibro, String^ titulo, String^ categoria, String^ estado, int edicion, String^ resena, String^ etiqueta, String^ autorLibro, String^ disponibilidad) {
             Titulo = titulo;
             Categoria = categoria;
             Estado = estado;
             Edicion = edicion;
-            Reseña = reseña;
+            Resena = resena;
             Etiqueta = etiqueta;
             AutorLibro = autorLibro;
             Disponibilidad = disponibilidad;

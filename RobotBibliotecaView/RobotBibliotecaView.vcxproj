@@ -121,12 +121,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="frmEditarDetalleEntrega.cpp" />
     <ClCompile Include="frmEditarLibro.cpp" />
-    <ClCompile Include="frmEditarUsuario.cpp" />
-    <ClCompile Include="frmMantLibros.cpp" />
-    <ClCompile Include="frmMantUsuarios.cpp" />
-    <ClCompile Include="frmNuevoLibro.cpp" />
-    <ClCompile Include="frmNuevoUsuario.cpp" />
+
     <ClCompile Include="frmPrincipal.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -138,22 +135,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="frmEditarDetalleEntrega.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmEditarLibro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmEditarUsuario.h">
+
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMantLibros.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmMantUsuarios.h">
+
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmNuevoLibro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmNuevoUsuario.h">
+
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmPrincipal.h">
@@ -161,20 +161,33 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmEditarDetalleEntrega.resx">
+      <DependentUpon>frmEditarDetalleEntrega.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEditarLibro.resx">
       <DependentUpon>frmEditarLibro.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarMantenimiento.resx">
+      <DependentUpon>frmEditarMantenimiento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarRobot.resx">
+      <DependentUpon>frmEditarRobot.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarValoracionEntrega.resx">
+      <DependentUpon>frmEditarValoracionEntrega.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantDetalleEntrega.resx">
+      <DependentUpon>frmMantDetalleEntrega.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantLibros.resx">
       <DependentUpon>frmMantLibros.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMantUsuarios.resx">
-      <DependentUpon>frmMantUsuarios.h</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoLibro.resx">
       <DependentUpon>frmNuevoLibro.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoUsuario.resx">
-      <DependentUpon>frmNuevoUsuario.h</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>

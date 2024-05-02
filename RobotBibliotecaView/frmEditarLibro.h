@@ -19,13 +19,13 @@ namespace RobotBibliotecaView {
 		{
 			InitializeComponent();
 			//
-			//TODO: agregar código de constructor aquí
+			//TODO: agregar cÃ³digo de constructor aquÃ­
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Limpiar los recursos que se estén usando.
+		/// Limpiar los recursos que se estÃ©n usando.
 		/// </summary>
 		~frmEditarLibro()
 		{
@@ -59,14 +59,14 @@ namespace RobotBibliotecaView {
 
 	private:
 		/// <summary>
-		/// Variable del diseñador necesaria.
+		/// Variable del diseÃ±ador necesaria.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Método necesario para admitir el Diseñador. No se puede modificar
-		/// el contenido de este método con el editor de código.
+		/// MÃ©todo necesario para admitir el DiseÃ±ador. No se puede modificar
+		/// el contenido de este mÃ©todo con el editor de cÃ³digo.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -139,6 +139,7 @@ namespace RobotBibliotecaView {
 			this->groupBox1->TabIndex = 3;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Datos del Libro";
+			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmEditarLibro::groupBox1_Enter);
 			// 
 			// comboBox3
 			// 
@@ -240,7 +241,7 @@ namespace RobotBibliotecaView {
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(47, 13);
 			this->label6->TabIndex = 5;
-			this->label6->Text = L"Reseña:";
+			this->label6->Text = L"ReseÃ±a:";
 			// 
 			// label5
 			// 
@@ -249,7 +250,7 @@ namespace RobotBibliotecaView {
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(45, 13);
 			this->label5->TabIndex = 4;
-			this->label5->Text = L"Edición:";
+			this->label5->Text = L"EdiciÃ³n:";
 			// 
 			// label4
 			// 
@@ -267,7 +268,7 @@ namespace RobotBibliotecaView {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(57, 13);
 			this->label3->TabIndex = 2;
-			this->label3->Text = L"Categoría:";
+			this->label3->Text = L"CategorÃ­a:";
 			// 
 			// label2
 			// 
@@ -276,7 +277,7 @@ namespace RobotBibliotecaView {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(38, 13);
 			this->label2->TabIndex = 1;
-			this->label2->Text = L"Título:";
+			this->label2->Text = L"TÃ­tulo:";
 			// 
 			// label1
 			// 
@@ -303,7 +304,7 @@ namespace RobotBibliotecaView {
 
 		}
 #pragma endregion
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
 	}
 };
 }
