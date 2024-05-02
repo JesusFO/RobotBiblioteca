@@ -1,4 +1,5 @@
 #pragma once
+#include "frmNuevoLibro.h"
 
 namespace RobotBibliotecaView {
 
@@ -8,6 +9,9 @@ namespace RobotBibliotecaView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace RobotBibliotecaControler;
+	using namespace System::Collections::Generic;
+	using namespace RobotBibliotecaModel;
 
 	/// <summary>
 	/// Resumen de frmMantLibros
@@ -69,9 +73,9 @@ namespace RobotBibliotecaView {
 		void InitializeComponent(void)
 		{
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
@@ -101,15 +105,17 @@ namespace RobotBibliotecaView {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Criterios de Búsqueda";
 			// 
-			// label1
+			// comboBox1
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(324, 33);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(38, 13);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Título:";
-			this->label1->Click += gcnew System::EventHandler(this, &frmMantLibros::label1_Click);
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(5) {
+				L"DataScience", L"SQL1", L"SQL2", L"MachineLearning",
+					L"PhytonParaDummies"
+			});
+			this->comboBox1->Location = System::Drawing::Point(387, 30);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(121, 21);
+			this->comboBox1->TabIndex = 2;
 			// 
 			// button1
 			// 
@@ -119,14 +125,17 @@ namespace RobotBibliotecaView {
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Buscar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &frmMantLibros::button1_Click);
 			// 
-			// comboBox1
+			// label1
 			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(387, 30);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(121, 21);
-			this->comboBox1->TabIndex = 2;
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(324, 33);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(38, 13);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"Título:";
+			this->label1->Click += gcnew System::EventHandler(this, &frmMantLibros::label1_Click);
 			// 
 			// dataGridView1
 			// 
@@ -139,6 +148,7 @@ namespace RobotBibliotecaView {
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->Size = System::Drawing::Size(949, 327);
 			this->dataGridView1->TabIndex = 1;
+			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &frmMantLibros::dataGridView1_CellContentClick);
 			// 
 			// Column1
 			// 
@@ -193,6 +203,7 @@ namespace RobotBibliotecaView {
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"Nuevo";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmMantLibros::button2_Click);
 			// 
 			// button3
 			// 
@@ -236,5 +247,39 @@ namespace RobotBibliotecaView {
 	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ Titulo = this->comboBox1->Text;//Para cuando se presiona el botón
+
+		//Para duardar los datos del peluche
+		LibroControler^ objLibroControler = gcnew LibroControler();
+		List<Libro^>^ listaLibros = objLibroControler->buscarLibrosxTitulo(Titulo);
+		mostrarGrilla(listaLibros);
+	}
+
+	private: void mostrarGrilla(List<Libro^>^ listaLibros) {
+		this->dataGridView1->Rows->Clear();
+		for (int i = 0; i < listaLibros->Count; i++) {
+			Libro^ objLibro = listaLibros[i];
+			array<String^>^ filaGrilla = gcnew array<String^>(9);
+			filaGrilla[0] = Convert::ToString(objLibro->getIdLibro());
+			filaGrilla[1] = objLibro->getTitulo();
+			filaGrilla[2] = objLibro->getCategoria();
+			filaGrilla[3] = objLibro->getEstado();
+			filaGrilla[4] = objLibro->getEdicion();
+			filaGrilla[5] = objLibro->getReseña();
+			filaGrilla[6] = objLibro->getEtiqueta();
+			filaGrilla[7] = objLibro->getAutorlibro();
+			filaGrilla[8] = objLibro->getDisponibilidad();
+			this->dataGridView1->Rows->Add(filaGrilla);
+		}
+	}
+
+
+	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		frmNuevoLibro^ ventanaNuevoLibro = gcnew frmNuevoLibro();
+		ventanaNuevoLibro->ShowDialog(); /*Voy a mostrar la ventana como una ventana modal*/
+	}
+};
 }

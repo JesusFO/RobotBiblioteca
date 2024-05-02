@@ -8,6 +8,7 @@ namespace RobotBibliotecaView {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace RobotBibliotecaControler;
 
 	/// <summary>
 	/// Resumen de frmNuevoLibro
@@ -214,6 +215,10 @@ namespace RobotBibliotecaView {
 			// comboBox1
 			// 
 			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(6) {
+				L"Informatica", L"Matematica", L"Fisica", L"Psicologia",
+					L"Economia", L"Historia"
+			});
 			this->comboBox1->Location = System::Drawing::Point(212, 95);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(135, 21);
@@ -257,6 +262,7 @@ namespace RobotBibliotecaView {
 			// comboBox2
 			// 
 			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Disponible", L"Ocupado" });
 			this->comboBox2->Location = System::Drawing::Point(212, 289);
 			this->comboBox2->Name = L"comboBox2";
 			this->comboBox2->Size = System::Drawing::Size(135, 21);
@@ -265,10 +271,12 @@ namespace RobotBibliotecaView {
 			// comboBox3
 			// 
 			this->comboBox3->FormattingEnabled = true;
+			this->comboBox3->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Nuevo", L"Seminuevo", L"Deteriorado" });
 			this->comboBox3->Location = System::Drawing::Point(212, 126);
 			this->comboBox3->Name = L"comboBox3";
 			this->comboBox3->Size = System::Drawing::Size(135, 21);
 			this->comboBox3->TabIndex = 17;
+			this->comboBox3->SelectedIndexChanged += gcnew System::EventHandler(this, &frmNuevoLibro::comboBox3_SelectedIndexChanged);
 			// 
 			// button1
 			// 
@@ -278,6 +286,7 @@ namespace RobotBibliotecaView {
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Grabar";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &frmNuevoLibro::button1_Click);
 			// 
 			// button2
 			// 
@@ -303,10 +312,29 @@ namespace RobotBibliotecaView {
 			this->ResumeLayout(false);
 
 		}
-#pragma endregion
+	#pragma endregion
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+	private: System::Void comboBox3_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		int idLibro = Convert::ToInt32(this->textBox1->Text);
+		String^ titulo = this ->textBox2->Text;
+		String^ categoria = this->comboBox1->Text;
+		String^ estado = this->comboBox2->Text;
+		int edicion = Convert::ToInt32(this->textBox3->Text);
+		String^ reseña = this->textBox4->Text;
+		String^ etiqueta = this->textBox5->Text;
+		String^ autor = this->textBox6->Text;
+		String^ disponibilidad = this->comboBox1->Text;
+
+		LibroControler^ objLibroControler = gcnew LibroControler();
+		objLibroControler->agregarNuevoLibro(idlibro, titulo, categoria, estado, edicion, reseña, etiqueta, autorLibro, disponibilidad);
+		MessageBox::Show("El libro ha sido agregado con éxito");
+		this->Close();
+	}
+
 };
 }

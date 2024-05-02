@@ -138,6 +138,7 @@ namespace RobotBibliotecaView {
 			this->groupBox1->TabIndex = 3;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Datos del Libro";
+			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmEditarLibro::groupBox1_Enter);
 			// 
 			// comboBox3
 			// 
@@ -302,5 +303,7 @@ namespace RobotBibliotecaView {
 
 		}
 #pragma endregion
-	};
+	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }

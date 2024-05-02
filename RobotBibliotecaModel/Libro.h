@@ -22,7 +22,7 @@ namespace RobotBibliotecaModel {
         property String^ Disponibilidad;
     public:
         Libro() {};
-        Libro(String^ titulo, String^ idlibro, String^ categoria, String^ estado, int edicion, String^ reseña, String^ etiqueta, String^ autorLibro, String^ disponibilidad) {
+        Libro( int idlibro, String^ titulo, String^ categoria, String^ estado, int edicion, String^ reseña, String^ etiqueta, String^ autorLibro, String^ disponibilidad) {
             Titulo = titulo;
             Categoria = categoria;
             Estado = estado;
