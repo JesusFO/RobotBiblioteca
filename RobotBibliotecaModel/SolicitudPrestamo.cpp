@@ -25,13 +25,7 @@ DetalleEntrega^ SolicitudPrestamo::getObjDetalleEntrega() {
 void SolicitudPrestamo::setObjDetalleEntrega(DetalleEntrega^ objDetalleEntrega) {
 	this->objDetalleEntrega = objDetalleEntrega;
 }
-int SolicitudPrestamo::getIdSolicitudPrestamo() {
-	return this->idSolicitudPrestamo;
-}
 
-void SolicitudPrestamo::setIdSolicitudPrestamo(int idSolicitudPrestamo) {
-	this->idSolicitudPrestamo = idSolicitudPrestamo;
-}
 
 int SolicitudPrestamo::getCantLibros() {
 	return this->cantLibros;
@@ -83,6 +77,15 @@ void SolicitudPrestamo::setHoraEntrega(String^ horaEntrega) {
 	this->horaEntrega = horaEntrega;
 }
 */
+
+int SolicitudPrestamo::getIdSolicitudP() {
+	return this->idSolicitudP;
+}
+
+void SolicitudPrestamo::setIdSolicitudP(int idSolicitudP) {
+	this->idSolicitudP = idSolicitudP;
+}
+
 ValidacionSolicitud^ SolicitudPrestamo::getObjValidacionSolicitud() {
 	return this->objValidacionSolicitud;
 }

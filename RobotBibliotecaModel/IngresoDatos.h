@@ -17,7 +17,7 @@ namespace RobotBibliotecaModel {
 		IngresoDatos();
 		IngresoDatos(int idIngreso, int codigo, String^ correo, String^ cuenta, String^ telefono);
 
-		int getIdIngreso();
+		/*int getIdIngreso();
 		void setIdIngreso(int idIngreso);
 
 		int getCodigo();
@@ -30,7 +30,7 @@ namespace RobotBibliotecaModel {
 		void setCuenta(String^ cuenta);
 
 		String^ getTelefono();
-		void setTelefono(String^ telefono);
+		void setTelefono(String^ telefono);*/
 	};
 
 }

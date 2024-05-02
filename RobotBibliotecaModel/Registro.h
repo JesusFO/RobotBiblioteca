@@ -33,6 +33,8 @@ namespace RobotBibliotecaModel {
 		void setFecha(String^ HoraNotificacion);
 		Usuario^ getObjUsuario();
 		void setObjUsuario(Usuario^ objUsuario);
+		
+		/*
 		int getIdIngreso();
 		void setIdIngreso(int idIngreso);
 
@@ -45,7 +47,7 @@ namespace RobotBibliotecaModel {
 		String^ getCuenta();
 		void setCuenta(String^ cuenta);
 		String^ getTelefono();
-		void setTelefono(String^ telefono);
+		void setTelefono(String^ telefono);*/
 
 	};
 

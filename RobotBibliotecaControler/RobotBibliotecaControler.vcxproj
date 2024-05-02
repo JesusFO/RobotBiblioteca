@@ -20,10 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{3D46E016-AAEE-460A-9910-B57B86C68C88}</ProjectGuid>
+    <ProjectGuid>{FC716F89-E27D-47E2-A518-62D7D616F385}</ProjectGuid>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>RobotBibliotecaController</RootNamespace>
+    <RootNamespace>RobotBibliotecaControler</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -114,12 +114,6 @@
     <ProjectReference Include="..\RobotBibliotecaModel\RobotBibliotecaModel.vcxproj">
       <Project>{60e15b3a-7150-4171-9b62-1268e0c54408}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="LibroControler.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="LibroControler.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -14,21 +14,20 @@ ConstanciaDePrestamo::ConstanciaDePrestamo(int idConstancia, int idlibros, Usuar
 }
 
 
-
+//Pantalla Libro
 
 // Propiedades GET - SET
 
 int ConstanciaDePrestamo::getIdlibros() {
 	return this->idlibros;
 }
-
 void ConstanciaDePrestamo::setIdlibros(int idlibros) {
 	this->idlibros = idlibros;
 }
+
 Usuario^ ConstanciaDePrestamo::getObjUsuario() {
 	return this->objUsuario;
 }
-
 void ConstanciaDePrestamo::setObjUsuario(Usuario^ objUsuario) {
 	this->objUsuario = objUsuario;
 }
@@ -37,10 +36,11 @@ void ConstanciaDePrestamo::setObjUsuario(Usuario^ objUsuario) {
 int ConstanciaDePrestamo::getIdConstancia() {
 	return this->idConstancia;
 }
-
 void ConstanciaDePrestamo::setIdConstancia(int idConstancia) {
 	this->idConstancia = idConstancia;
 }
+
+
 /*
 int ConstanciaDePrestamo::getIdDatosP() {
 	return this->idDatosP;
