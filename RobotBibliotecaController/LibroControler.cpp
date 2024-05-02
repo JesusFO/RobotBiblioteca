@@ -72,7 +72,7 @@ void LibroControler::escribirArchivo(List<Libro^>^ listaLibros) {
 	array<String^>^ lineasArchivo = gcnew array<String^>(listaLibros->Count);
 	for (int i = 0; i < listaLibros->Count; i++) {
 		Libro^ objLibro = listaLibros[i];
-		lineasArchivo[i] = Convert::ToString(objLibro->getIdLibro()) + ";" + objLibro->getTitulo() + ";" + objLibro->getCategoria() + ";" + objLibro->getEstado() + ";" + Convert::ToString(objLibro->getEdicion()) + ";" +  objLibro->getReseña() + ";" + objLibro->getEtiqueta() + ";" + objLibro->getColorLibro() + ";" + objLibro->getDisponibilidad();
+		lineasArchivo[i] = Convert::ToString(objLibro->IdLibro) + ";" + objLibro->Titulo + ";" + objLibro->Categoria + ";" + objLibro->Estado + ";" + Convert::ToString(objLibro->Edicion) + ";" +  objLibro->Resena + ";" + objLibro->Etiqueta + ";" + objLibro->AutorLibro + ";" + objLibro->Disponibilidad;
 	}
 	File::WriteAllLines("Libros.txt", lineasArchivo);
 }
