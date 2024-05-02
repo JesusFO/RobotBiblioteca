@@ -122,8 +122,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="frmEditarLibro.cpp" />
+    <ClCompile Include="frmEditarUsuario.cpp" />
     <ClCompile Include="frmMantLibros.cpp" />
+    <ClCompile Include="frmMantUsuarios.cpp" />
     <ClCompile Include="frmNuevoLibro.cpp" />
+    <ClCompile Include="frmNuevoUsuario.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -138,10 +141,19 @@
     <ClInclude Include="frmEditarLibro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frmEditarUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmMantLibros.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frmMantUsuarios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmNuevoLibro.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoUsuario.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmPrincipal.h">
@@ -155,8 +167,14 @@
     <EmbeddedResource Include="frmMantLibros.resx">
       <DependentUpon>frmMantLibros.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMantUsuarios.resx">
+      <DependentUpon>frmMantUsuarios.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoLibro.resx">
       <DependentUpon>frmNuevoLibro.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoUsuario.resx">
+      <DependentUpon>frmNuevoUsuario.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>

@@ -1,13 +1,10 @@
 #pragma once
 
-#include "Usuario.h"
-#include "IngresoDatos.h"
-
 using namespace System;
 
 namespace RobotBibliotecaModel {
 
-	public ref class Registro : IngresoDatos {
+	public ref class Registro  {
 
 	private:
 		int idRegistro;
@@ -15,11 +12,13 @@ namespace RobotBibliotecaModel {
 		String^ DNI;
 		String^ contraseña;
 		String^ fecha;
-		Usuario^ objUsuario;
-
+		int codigo;
+		String^ correo;
+		String^ cuenta;
+		String^ telefono;
 	public:
 		Registro();
-		Registro(int idRegistro, String^ Direccion, String^ DNI, String^ Contraseña, String^ fecha, Usuario^ objUsuario, int idIngreso, int codigo, String^ correo, String^ cuenta, String^ telefono);
+		Registro(int idRegistro, String^ Direccion, String^ DNI, String^ Contraseña, String^ fecha, int codigo, String^ correo, String^ cuenta, String^ telefono);
 
 		int getIdRegistro();
 		void setIdRegistro(int idRegistro);
@@ -31,12 +30,13 @@ namespace RobotBibliotecaModel {
 		void setContraseña(String^ Contraseña);
 		String^ getFecha();
 		void setFecha(String^ HoraNotificacion);
+		/*
 		Usuario^ getObjUsuario();
-		void setObjUsuario(Usuario^ objUsuario);
+		void setObjUsuario(Usuario^ objUsuario);*/
 		
 		/*
 		int getIdIngreso();
-		void setIdIngreso(int idIngreso);
+		void setIdIngreso(int idIngreso);*/
 
 		int getCodigo();
 		void setCodigo(int codigo);
@@ -47,7 +47,7 @@ namespace RobotBibliotecaModel {
 		String^ getCuenta();
 		void setCuenta(String^ cuenta);
 		String^ getTelefono();
-		void setTelefono(String^ telefono);*/
+		void setTelefono(String^ telefono);
 
 	};
 

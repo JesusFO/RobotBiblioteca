@@ -2,18 +2,21 @@
 
 using namespace RobotBibliotecaModel;
 
-Registro::Registro(): IngresoDatos() {
+Registro::Registro(){
 
 }
 
-Registro::Registro(int idRegistro, String^ direccion, String^ DNI, String^ contraseña, String^ fecha, Usuario^ objUsuario, int idIngreso, int codigo, String^ correo, String^ cuenta, String^ telefono): IngresoDatos( idIngreso, codigo, correo,  cuenta, telefono) {
+Registro::Registro(int idRegistro, String^ direccion, String^ DNI, String^ contraseña, String^ fecha, int codigo, String^ correo, String^ cuenta, String^ telefono){
 	
 	this->idRegistro = idRegistro;
 	this->direccion = direccion;
 	this->DNI = DNI;
 	this->contraseña = contraseña;
 	this->fecha = fecha;
-	this->objUsuario = objUsuario;
+	this->codigo = codigo;
+	this->correo = correo;
+	this->cuenta = cuenta;
+	this->telefono = telefono;
 }
 
 int Registro::getIdRegistro() {
@@ -23,11 +26,13 @@ void Registro::setIdRegistro(int idRegistro) {
 	this->idRegistro=idRegistro;
 }
 
+
 String^ Registro::getDireccion() {
 	return this->direccion;
 }
 void Registro::setDireccion(String^ direccion) {
 	this->direccion=direccion;
+
 }
 String^ Registro::getDNI() {
 	return this->DNI;
@@ -36,31 +41,19 @@ void Registro::setDNI(String^ DNI) {
 	this->DNI=DNI;
 }
 
+
 String^ Registro::getContraseña() {
 	return this->contraseña;
 }
 void Registro::setContraseña(String^ contraseña) {
 	this->contraseña = contraseña;
+
 }
 String^ Registro::getFecha() {
 	return this->fecha;
 }
 void Registro::setFecha(String^ HoraNotificacion) {
 	this->fecha = fecha;
-}
-Usuario^ Registro::getObjUsuario() {
-	return this->objUsuario;
-}
-void Registro::setObjUsuario(Usuario^ objUsuario) {
-	this->objUsuario = objUsuario;
-}
-
-/*
-int Registro::getIdIngreso() {
-	return this->idIngreso;
-}
-void Registro::setIdIngreso(int idIngreso) {
-	this->idIngreso = idIngreso;
 }
 
 int Registro::getCodigo() {
@@ -76,7 +69,8 @@ String^ Registro::getCorreo() {
 void Registro::setCorreo(String^ correo) {
 	this->correo = correo;
 }
-String^ Registro::getDNI() {
+
+String^ Registro::getCuenta() {
 	return this->cuenta;
 }
 void Registro::setCuenta(String^ cuenta) {
@@ -88,4 +82,21 @@ String^ Registro::getTelefono() {
 }
 void Registro::setTelefono(String^ telefono) {
 	this->telefono = telefono;
+}
+
+/*
+Usuario^ Registro::getObjUsuario() {
+	return this->objUsuario;
+}
+void Registro::setObjUsuario(Usuario^ objUsuario) {
+	this->objUsuario = objUsuario;
 }*/
+
+/*
+int Registro::getIdIngreso() {
+	return this->idIngreso;
+}
+void Registro::setIdIngreso(int idIngreso) {
+	this->idIngreso = idIngreso;
+}
+*/

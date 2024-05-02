@@ -69,9 +69,9 @@ namespace RobotBibliotecaView {
 		void InitializeComponent(void)
 		{
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
@@ -101,15 +101,13 @@ namespace RobotBibliotecaView {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Criterios de Búsqueda";
 			// 
-			// label1
+			// comboBox1
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(324, 33);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(38, 13);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Título:";
-			this->label1->Click += gcnew System::EventHandler(this, &frmMantLibros::label1_Click);
+			this->comboBox1->FormattingEnabled = true;
+			this->comboBox1->Location = System::Drawing::Point(387, 30);
+			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(121, 21);
+			this->comboBox1->TabIndex = 2;
 			// 
 			// button1
 			// 
@@ -120,13 +118,15 @@ namespace RobotBibliotecaView {
 			this->button1->Text = L"Buscar";
 			this->button1->UseVisualStyleBackColor = true;
 			// 
-			// comboBox1
+			// label1
 			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(387, 30);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(121, 21);
-			this->comboBox1->TabIndex = 2;
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(324, 33);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(38, 13);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"Título:";
+			this->label1->Click += gcnew System::EventHandler(this, &frmMantLibros::label1_Click);
 			// 
 			// dataGridView1
 			// 
@@ -193,6 +193,7 @@ namespace RobotBibliotecaView {
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"Nuevo";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &frmMantLibros::button2_Click);
 			// 
 			// button3
 			// 
@@ -236,5 +237,8 @@ namespace RobotBibliotecaView {
 	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	}
+};
 }
