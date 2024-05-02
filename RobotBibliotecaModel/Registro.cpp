@@ -2,11 +2,11 @@
 
 using namespace RobotBibliotecaModel;
 
-Registro::Registro() {
+Registro::Registro(): IngresoDatos() {
 
 }
 
-Registro::Registro(int idRegistro, String^ direccion, String^ DNI, String^ contraseña, String^ fecha, Usuario^ objUsuario, int idIngreso, int codigo, String^ correo, String^ cuenta, String^ telefono) {
+Registro::Registro(int idRegistro, String^ direccion, String^ DNI, String^ contraseña, String^ fecha, Usuario^ objUsuario, int idIngreso, int codigo, String^ correo, String^ cuenta, String^ telefono): IngresoDatos( idIngreso, codigo, correo,  cuenta, telefono) {
 	
 	this->idRegistro = idRegistro;
 	this->direccion = direccion;
@@ -14,14 +14,9 @@ Registro::Registro(int idRegistro, String^ direccion, String^ DNI, String^ contr
 	this->contraseña = contraseña;
 	this->fecha = fecha;
 	this->objUsuario = objUsuario;
-	this->idIngreso = idIngreso;
-	this->codigo = codigo;
-	this->correo = correo;
-	this->cuenta = cuenta;
-	this->telefono = telefono;
 }
 
-int Registro::getIdRegistro() {
+/*int Registro::getIdRegistro() {
 	return this->idRegistro;
 }
 void Registro::setIdRegistro(int idRegistro) {
@@ -92,4 +87,4 @@ String^ Registro::getTelefono() {
 }
 void Registro::setTelefono(String^ telefono) {
 	this->telefono = telefono;
-}
+}*/

@@ -35,11 +35,14 @@ namespace RobotBibliotecaModel {
 		void setObjUsuario(Usuario^ objUsuario);
 		int getIdIngreso();
 		void setIdIngreso(int idIngreso);
+
 		int getCodigo();
 		void setCodigo(int codigo);
+
 		String^ getCorreo();
 		void setCorreo(String^ correo);
-		String^ getDNI();
+
+		String^ getCuenta();
 		void setCuenta(String^ cuenta);
 		String^ getTelefono();
 		void setTelefono(String^ telefono);

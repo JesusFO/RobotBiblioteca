@@ -23,6 +23,6 @@ namespace RobotBibliotecaModel {
             Problema = problema;
             Fecha = fecha;
         };
-    }
-};
+    };
+}
 #endif //_SOLICITUDMANTENIMIENTO_H

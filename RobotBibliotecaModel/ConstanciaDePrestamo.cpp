@@ -11,5 +11,4 @@ ConstanciaDePrestamo::ConstanciaDePrestamo(int idConstanciaDePrestamo, int idlib
 	this->idConstanciaDePrestamo = idConstanciaDePrestamo;
 	this->idlibros = idlibros;
 	this->objUsuario = objUsuario;
-
 }

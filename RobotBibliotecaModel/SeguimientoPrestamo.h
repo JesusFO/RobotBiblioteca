@@ -8,27 +8,24 @@ namespace RobotBibliotecaModel {
 
 	public ref class SeguimientoPrestamo {
 	private:
-		int idSeguimentoPrestamo;
-		int VencimientoPrestamoHoras;
-		int RenovacionPrestamoHoras;
-		String^ nombre;
+		int idSeguimientoPrestamo;
+		int vencimientoPrestamoHoras;
+		int renovacionPrestamoHoras;
 		int numerodesolicitud;
-		Usuario^ ObjUsuario;
+		Usuario^ objUsuario;
 	public:
 		SeguimientoPrestamo();
-		SeguimientoPrestamo(int idSeguimentoPrestamo, int VencimientoPrestamoHoras, int RenovacionPrestamoHoras, String^ nombre, int numerodesolicitud, Usuario^ ObjUsuario);
-		int getidSeguimientoPrestamo();
-		void setidSeguimientoPrestamo(int idSeguimientoPrestamo);
+		SeguimientoPrestamo(int idSeguimientoPrestamo, int vencimientoPrestamoHoras, int renovacionPrestamoHoras, String^ nombre, int numerodesolicitud, Usuario^ objUsuario);
+		int getIdSeguimientoPrestamo();
+		void setIdSeguimientoPrestamo(int idSeguimientoPrestamo);
 		int getVencimientoPrestamoHoras();
-		void setVencimientoPrestamoHoras(int VencimientoPrestamoHoras);
+		void setVencimientoPrestamoHoras(int vencimientoPrestamoHoras);
 		int getRenovacionPrestamoHoras();
-		void setRenovacionPrestamoHoras(int RenovacionPrestamoHoras);
-		String^ getnombre();
-		void setnombre(String^ nombre);
+		void setRenovacionPrestamoHoras(int renovacionPrestamoHoras);
 		int getnumerodesolicitud();
 		void setnumerodesolicitud(int numerodesolicitud);
 		Usuario^ getObjUsuario();
-		void setObjUsuario(Usuario^ ObjUsuario);
+		void setObjUsuario(Usuario^ objUsuario);
 
 	};
 }
